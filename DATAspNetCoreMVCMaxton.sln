@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DATAspNetCoreMVCMaxton", "DATAspNetCoreMVCMaxton.csproj", "{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATAspNETApiCoreMVC", "..\DATAspNETApiCoreMVC\DATAspNETApiCoreMVC.csproj", "{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B737858A-1551-4159-88BE-1C5CBBB4FA78}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}|..\\DATAspNETApiCoreMVC\\DATAspNETApiCoreMVC.csproj|e:\\datsoftware\\dataspnetapicoremvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\migrations\\20240913025107_dataspnetcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:migrations\\20240913025107_dataspnetcore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\migrations\\20240913025107_dataspnetcore.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:migrations\\20240913025107_dataspnetcore.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}|..\\DATAspNETApiCoreMVC\\DATAspNETApiCoreMVC.csproj|e:\\datsoftware\\dataspnetapicoremvc\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}|..\\DATAspNETApiCoreMVC\\DATAspNETApiCoreMVC.csproj|e:\\datsoftware\\dataspnetapicoremvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}|..\\DATAspNETApiCoreMVC\\DATAspNETApiCoreMVC.csproj|e:\\datsoftware\\dataspnetapicoremvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240913025107_DATAspNetCore.Designer.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Migrations\\20240913025107_DATAspNetCore.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240913025107_DATAspNetCore.Designer.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Migrations\\20240913025107_DATAspNetCore.Designer.cs",
+              "RelativeToolTip": "Migrations\\20240913025107_DATAspNetCore.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:02:51.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNETApiCoreMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\DATAspNETApiCoreMVC\\appsettings.json",
+              "ToolTip": "E:\\DATSoftware\\DATAspNETApiCoreMVC\\appsettings.json",
+              "RelativeToolTip": "..\\DATAspNETApiCoreMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-13T03:34:19.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-13T03:34:06.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNETApiCoreMVC\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\DATAspNETApiCoreMVC\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNETApiCoreMVC\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\DATAspNETApiCoreMVC\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T02:48:13.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNETApiCoreMVC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "..\\DATAspNETApiCoreMVC\\Controllers\\AccountController.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNETApiCoreMVC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "..\\DATAspNETApiCoreMVC\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAgwE0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T16:58:48.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240913025107_DATAspNetCore.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Migrations\\20240913025107_DATAspNetCore.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240913025107_DATAspNetCore.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Migrations\\20240913025107_DATAspNetCore.cs",
+              "RelativeToolTip": "Migrations\\20240913025107_DATAspNetCore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T04:03:01.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNETApiCoreMVC\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\DATAspNETApiCoreMVC\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNETApiCoreMVC\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\DATAspNETApiCoreMVC\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T17:02:32.134Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="en" data-bs-theme="blue-theme">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @await Html.PartialAsync("~/Views/Shared/Title_Meta.cshtml")
+    @RenderSection("styles", false)
+    @await Html.PartialAsync("~/Views/Shared/Css.cshtml")
+
+</head>
+
+<body>
+
+    <!--authentication-->
+    @RenderBody()
+
+    @RenderSection("externalhtml", false)
+    <!--authentication-->
+    <!--plugins-->
+    <script src="assets/js/jquery.min.js"></script>
+    @RenderSection("scripts", required: false)
+    
+    <script>
+        $(document).ready(function () {
+            $("#show_hide_password a").on('click', function (event) {
+                event.preventDefault();
+                if ($('#show_hide_password input').attr("type") == "text") {
+                    $('#show_hide_password input').attr('type', 'password');
+                    $('#show_hide_password i').addClass("bi-eye-slash-fill");
+                    $('#show_hide_password i').removeClass("bi-eye-fill");
+                } else if ($('#show_hide_password input').attr("type") == "password") {
+                    $('#show_hide_password input').attr('type', 'text');
+                    $('#show_hide_password i').removeClass("bi-eye-slash-fill");
+                    $('#show_hide_password i').addClass("bi-eye-fill");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

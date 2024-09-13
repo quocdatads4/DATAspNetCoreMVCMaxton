@@ -1,0 +1,7 @@
+E:\DATSoftware\DATAspNetCoreMVCMaxton\obj\Release\net8.0\PubTmp\Out\DATAspNetCoreMVCMaxton.exe
+E:\DATSoftware\DATAspNetCoreMVCMaxton\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+E:\DATSoftware\DATAspNetCoreMVCMaxton\obj\Release\net8.0\PubTmp\Out\appsettings.json
+E:\DATSoftware\DATAspNetCoreMVCMaxton\obj\Release\net8.0\PubTmp\Out\DATAspNetCoreMVCMaxton.dll
+E:\DATSoftware\DATAspNetCoreMVCMaxton\obj\Release\net8.0\PubTmp\Out\DATAspNetCoreMVCMaxton.deps.json
+E:\DATSoftware\DATAspNetCoreMVCMaxton\obj\Release\net8.0\PubTmp\Out\DATAspNetCoreMVCMaxton.runtimeconfig.json
+E:\DATSoftware\DATAspNetCoreMVCMaxton\obj\Release\net8.0\PubTmp\Out\DATAspNetCoreMVCMaxton.pdb

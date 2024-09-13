@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DATAspNetCoreMVCMaxton.props" />
+</Project>

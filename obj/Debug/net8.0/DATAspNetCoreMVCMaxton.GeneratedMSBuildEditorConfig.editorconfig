@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DATAspNetCoreMVCMaxton
+build_property.RootNamespace = DATAspNetCoreMVCMaxton
+build_property.ProjectDir = E:\DATSoftware\DATAspNetCoreMVCMaxton\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\DATSoftware\DATAspNetCoreMVCMaxton
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Auth/Basiclogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxCYXNpY2xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Css.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Right_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJpZ2h0X1NpZGViYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGViYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Title_Meta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRpdGxlX01ldGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Topbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcGJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Vendor_Scripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFZlbmRvcl9TY3JpcHRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/_Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9aou9hzkuz
