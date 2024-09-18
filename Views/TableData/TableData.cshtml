@@ -1,0 +1,144 @@
+﻿@model IEnumerable<ProfileOrbitaModel>
+
+@section styles {
+	<link href="~/assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+}
+
+<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-2">
+	<div class="ps-3">
+		<button id="checkAllButton" onclick="checkAll()" type="button" class="btn btn-primary px-4 raised d-flex gap-2"><i class="material-icons-outlined">check_circle</i>Chọn tất cả</button>
+	</div>
+	<div class="ps-2">
+		<button id="uncheckAllButton" onclick="uncheckAll()" type="button" class="btn btn-secondary raised d-flex"><i class="material-icons-outlined">radio_button_unchecked</i>Bỏ chọn</button>
+	</div>
+	<div class="ps-2">
+		<button id="uncheckAllButton" onclick="uncheckAll()" type="button" class="btn btn-success px-4 raised d-flex gap-2"><i class="material-icons-outlined">change_circle</i> Tự động chạy</button>
+	</div>
+</div>
+
+<div class="card">
+	<div class="card-body">
+		<div class="table-responsive">
+			<table id="example2" class="table table-striped table-bordered">
+				<thead>
+					<tr>
+						<th>Chọn</th>
+						<th>Avatar</th>
+						<th>Profile ID</th>
+						<th>Profile Name</th>
+						<th>IP</th>
+						<th>Contry</th>
+						<th>Trạng thái</th>
+						<th>Nhóm</th>
+						<th>Hành động</th>
+						<th>Cập nhật</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var profile in Model)
+                    {
+						<tr>
+							<td><input type="checkbox" id="checkbox1"></td>
+							<td><img src="~/assets/img/avatars/10.png" alt="Avatar" class="rounded-circle p-1 border" width="60" height="60"></td>
+							<td>@profile.ID</td>
+							<td>@profile.ProfileName</td>
+							<td>113.23.108.245</td>
+							<td>Vietnam</td>
+							<td>@profile.Status</td>
+							<td>@profile.ProfileGroupID</td>
+							<td><button id="button1" onclick="buttonClicked(this.id)" class=" btn btn-success px-4 raised d-flex gap-2"><i class="material-icons-outlined">account_circle</i>Mở</button></td>
+							<td>
+								<div class="btn-group">
+									<button type="button" class="btn btn-outline-success">Sửa</button>
+									<button type="button" class="btn btn-outline-danger">Xoá</button>
+								</div>
+							</td>
+						</tr>
+					}
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Name</th>
+						<th>Position</th>
+						<th>Office</th>
+						<th>Age</th>
+						<th>Start date</th>
+						<th>Salary</th>
+					</tr>
+				</tfoot>
+			</table>
+
+		</div>
+	</div>
+</div>
+
+
+@section scripts {
+	<script src="~/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="~/assets/plugins/metismenu/metisMenu.min.js"></script>
+	<script src="~/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="~/assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#example').DataTable();
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			var table = $('#example2').DataTable({
+				lengthChange: false,
+				buttons: ['copy', 'excel', 'pdf', 'print']
+			});
+
+			table.buttons().container()
+				.appendTo('#example2_wrapper .col-md-6:eq(0)');
+		});
+	</script>
+
+
+	<!-- Additional Buttons -->
+	<button id="checkAllButton" onclick="checkAll()">Check All</button>
+	<button id="uncheckAllButton" onclick="uncheckAll()">UnCheck All</button>
+	<button id="buttonAll" onclick="buttonAllClicked()">Button All</button>
+
+	<script>
+		function checkAll() {
+			document.getElementById('checkbox1').checked = true;
+			document.getElementById('checkbox2').checked = true;
+			document.getElementById('checkbox3').checked = true;
+
+		}
+		function uncheckAll() {
+			document.getElementById('checkbox1').checked = false;
+			document.getElementById('checkbox2').checked = false;
+			document.getElementById('checkbox3').checked = false;
+
+		}
+
+		function buttonClicked(buttonId) {
+			console.log(buttonId);
+			window.chrome.webview.postMessage(buttonId);
+		}
+
+		function checkAllCheckboxes() {
+			return document.getElementById('checkbox1').checked &&
+				   document.getElementById('checkbox2').checked &&
+				   document.getElementById('checkbox3').checked;
+		}
+
+
+
+		function buttonAllClicked() {
+			if (document.getElementById('checkbox1').checked) {
+				buttonClicked('button1');
+			}
+			if (document.getElementById('checkbox2').checked) {
+				buttonClicked('button2');
+			}
+			if (document.getElementById('checkbox3').checked) {
+				buttonClicked('button3');
+			}
+		}
+	</script>
+
+}

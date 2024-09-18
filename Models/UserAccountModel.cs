@@ -21,5 +21,7 @@ namespace DATAspNetCoreMVCMaxton.Models
 		public string? Language { get; set; }
 		public string? Currency { get; set; }
 		public string? ApiKey { get; set; }
-	}
+        public string? Avatar { get; set; }
+        public string? FacebookID { get; set; }
+    }
 }

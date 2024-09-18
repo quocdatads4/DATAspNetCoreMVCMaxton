@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JHlJT22mUIq1Ku/i/0xl6EzMC9FcdfvFeuSSXTgIzmQ=",
+  "Hash": "8tjLogUPVpkNQWXa6kJR4CWCe1CoAgUQL7KAPoNL0tA=",
   "Source": "DATAspNetCoreMVCMaxton",
   "BasePath": "_content/DATAspNetCoreMVCMaxton",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DATAspNetCoreMVCMaxton.styles.css",
-      "SourceId": "DATAspNetCoreMVCMaxton",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/DATAspNetCoreMVCMaxton",
-      "RelativePath": "DATAspNetCoreMVCMaxton.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DATAspNetCoreMVCMaxton.styles.css"
-    },
-    {
-      "Identity": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DATAspNetCoreMVCMaxton.bundle.scp.css",
-      "SourceId": "DATAspNetCoreMVCMaxton",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/DATAspNetCoreMVCMaxton",
-      "RelativePath": "DATAspNetCoreMVCMaxton.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DATAspNetCoreMVCMaxton.bundle.scp.css"
-    },
     {
       "Identity": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\css\\bootstrap.min.css",
       "SourceId": "DATAspNetCoreMVCMaxton",

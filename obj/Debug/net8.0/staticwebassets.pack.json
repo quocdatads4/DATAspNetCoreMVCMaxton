@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DATAspNetCoreMVCMaxton.bundle.scp.css",
-      "PackagePath": "staticwebassets\\DATAspNetCoreMVCMaxton.bundle.scp.css"
-    },
-    {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\css\\bootstrap-extended.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-extended.css"
     },

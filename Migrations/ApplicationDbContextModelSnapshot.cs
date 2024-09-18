@@ -22,7 +22,7 @@ namespace DATAspNetCoreMVCMaxton.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("DATAspNetCoreMVCMaxton.Models.ApplicationUser", b =>
+            modelBuilder.Entity("DATAspNetCoreMVCMaxton.Models.ApplicationUserModel", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -90,6 +90,47 @@ namespace DATAspNetCoreMVCMaxton.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("DATAspNetCoreMVCMaxton.Models.ProfileGroupModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AspNetProfileGroup");
+                });
+
+            modelBuilder.Entity("DATAspNetCoreMVCMaxton.Models.ProfileOrbitaModel", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int?>("ProfileGroupID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProfileName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("AspNetProfileOrbita");
+                });
+
             modelBuilder.Entity("DATAspNetCoreMVCMaxton.Models.UserAccountModel", b =>
                 {
                     b.Property<int>("Id")
@@ -104,6 +145,9 @@ namespace DATAspNetCoreMVCMaxton.Migrations
                     b.Property<string>("ApiKey")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Avatar")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Country")
                         .HasColumnType("nvarchar(max)");
 
@@ -111,6 +155,9 @@ namespace DATAspNetCoreMVCMaxton.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FacebookID")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
@@ -286,7 +333,7 @@ namespace DATAspNetCoreMVCMaxton.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("DATAspNetCoreMVCMaxton.Models.ApplicationUser", null)
+                    b.HasOne("DATAspNetCoreMVCMaxton.Models.ApplicationUserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -295,7 +342,7 @@ namespace DATAspNetCoreMVCMaxton.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("DATAspNetCoreMVCMaxton.Models.ApplicationUser", null)
+                    b.HasOne("DATAspNetCoreMVCMaxton.Models.ApplicationUserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -310,7 +357,7 @@ namespace DATAspNetCoreMVCMaxton.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DATAspNetCoreMVCMaxton.Models.ApplicationUser", null)
+                    b.HasOne("DATAspNetCoreMVCMaxton.Models.ApplicationUserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -319,7 +366,7 @@ namespace DATAspNetCoreMVCMaxton.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("DATAspNetCoreMVCMaxton.Models.ApplicationUser", null)
+                    b.HasOne("DATAspNetCoreMVCMaxton.Models.ApplicationUserModel", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

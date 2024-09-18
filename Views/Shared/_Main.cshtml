@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en" data-bs-theme="blue-theme">
+<head>
+    @await Html.PartialAsync("~/Views/Shared/Title_Meta.cshtml")
+    @RenderSection("styles", false)
+    @await Html.PartialAsync("~/Views/Shared/Css.cshtml")
+</head>
+<body>
+    <!--start main wrapper-->
+    <main class="main-wrapper">
+        <div class="main-content">
+
+            <!--Kết nối với Model-->
+
+            @await Html.PartialAsync("~/Views/Shared/Topbar.cshtml")
+            @await Html.PartialAsync("~/Views/Shared/Sidebar.cshtml")
+
+            <!--End Kết nối với Model-->
+
+            @RenderBody()
+
+            @RenderSection("externalhtml", false)
+
+        </div>
+    </main>
+    <!--end main wrapper-->
+    <!--start overlay-->
+    <div class="overlay btn-toggle"></div>
+    <!--end overlay-->
+    @await Html.PartialAsync("~/Views/Shared/Footer.cshtml")
+  
+    @await Html.PartialAsync("~/Views/Shared/Vendor_Scripts.cshtml")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
