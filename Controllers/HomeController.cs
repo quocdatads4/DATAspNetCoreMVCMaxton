@@ -31,7 +31,7 @@ namespace DATAspNetCoreMVCMaxton.Controllers
             int profileCount = profileOrbitas.Count;
 
             var profileGroupSelectList = CreateProfileGroupSelectList(profileGroups);
-            var dashboardModel = CreateDashboardModel(profileGroupSelectList, profileOrbitas,  profileCount);
+            var dashboardModel = CreateDashboardModel(profileGroupSelectList, profileOrbitas);
 
             // Điền dữ liệu cần thiết vào từng model
             // ...
@@ -71,15 +71,13 @@ namespace DATAspNetCoreMVCMaxton.Controllers
         // Phương thức này tạo DashboardModel từ các tham số đầu vào
         private DashboardModel CreateDashboardModel(
             List<SelectListItem> profileGroupSelectList, 
-            List<ProfileOrbitaModel> profileOrbitas,
-			int profileCount
+            List<ProfileOrbitaModel> profileOrbitas
             )
         {
             return new DashboardModel
             {
                 ProfileGroupSelectList = profileGroupSelectList,
-                ProfileOrbitas = profileOrbitas,
-                ProfileCount = profileCount,
+                ProfileOrbitas = profileOrbitas
             };
         }
 

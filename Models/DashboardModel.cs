@@ -9,7 +9,5 @@ namespace DATAspNetCoreMVCMaxton.Models
 		public IEnumerable<SelectListItem>? ProfileGroupSelectList { get; set; }
 		public List<ProfileOrbitaModel>? ProfileOrbitas { get; set; }
         public List<UserAccountModel>? UserAccount { get; set; }
-		public int ProfileCount { get; set; } // Thêm thuộc tính này
-
 	}
 }

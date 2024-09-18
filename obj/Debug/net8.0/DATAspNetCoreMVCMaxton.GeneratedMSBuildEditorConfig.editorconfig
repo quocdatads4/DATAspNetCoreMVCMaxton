@@ -26,12 +26,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Home/DashboardReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmRSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/ProfileGroup/ProfileGroupList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZUdyb3VwXFByb2ZpbGVHcm91cExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/ProfileOrbita/CreateProfileOrbita.cshtml]

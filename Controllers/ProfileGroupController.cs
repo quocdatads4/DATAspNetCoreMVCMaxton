@@ -17,9 +17,20 @@ namespace DATAspNetCoreMVCMaxton.Controllers
         public async Task<IActionResult> ProfileGroupList()
         {
             var profileGroups = await _context.AspNetProfileGroup.ToListAsync();
-            ViewBag.ProfileGroups = new SelectList(profileGroups, "Id", "Name");
+
             return View();
         }
-
-    }
+		public IActionResult ProfileGroupAdd()
+		{
+			return View();
+		}
+		public IActionResult ProfileGroupUpdate()
+		{
+			return View();
+		}
+		public IActionResult ProfileGroupDelete()
+		{
+			return View();
+		}
+	}
 }
