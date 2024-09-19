@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DATAspNetCoreMVCMaxton.Models
 {
-	public class ProfileOrbitaModel
+	public class ProfileOrbitaDTO
 	{
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]

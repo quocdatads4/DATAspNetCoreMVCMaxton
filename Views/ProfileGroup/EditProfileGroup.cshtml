@@ -1,0 +1,34 @@
+﻿@model DATAspNetCoreMVCMaxton.ViewModel.MainVM
+
+@{
+    ViewBag.Title = "Chỉnh sửa nhóm";
+    Layout = "~/Views/Shared/_Main.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-6">
+        <h6 class="mb-0 text-uppercase">Cập nhật nhóm</h6>
+        <hr>
+        <div class="col-md-12">
+            <form asp-action="EditProfileGroup" method="post">
+                <div class="mb-3">
+                    <label asp-for="ProfileGroup.Name" class="form-label">Tên nhóm</label>
+                    <input asp-for="ProfileGroup.Name" class="form-control" />
+                    <span asp-validation-for="ProfileGroup.Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="ProfileGroup.TotalProfile" class="form-label">Tổng số hồ sơ</label>
+                    <input asp-for="ProfileGroup.TotalProfile" class="form-control" />
+                    <span asp-validation-for="ProfileGroup.TotalProfile" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="ProfileGroup.CreatedDate" class="form-label">Ngày tạo</label>
+                    <input asp-for="ProfileGroup.CreatedDate" class="form-control" type="date" />
+                    <span asp-validation-for="ProfileGroup.CreatedDate" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="ProfileGroup.Id" />
+                <button type="submit" class="btn btn-grd-primary px-4">Cập nhật</button>
+            </form>
+        </div>
+    </div>
+</div>

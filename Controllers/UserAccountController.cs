@@ -1,4 +1,4 @@
-﻿using DATAspNetCoreMVCMaxton.Data;
+﻿using DATAspNetCoreMVCMaxton.DataAccess;
 using DATAspNetCoreMVCMaxton.Models;
 using DATAspNetCoreMVCMaxton.ViewModel;
 using Microsoft.AspNetCore.Mvc;

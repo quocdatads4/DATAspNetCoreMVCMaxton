@@ -1,4 +1,4 @@
-﻿using DATAspNetCoreMVCMaxton.Data;
+﻿using DATAspNetCoreMVCMaxton.DataAccess;
 using DATAspNetCoreMVCMaxton.Models;
 using DATAspNetCoreMVCMaxton.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +11,7 @@ namespace DATAspNetCoreMVCMaxton.Controllers
 	public class ProfileOrbitaController : Controller
 	{
 		private readonly ApplicationDbContext _context;
-		public List<ProfileGroupModel> ProfileGroups { get; set; }
+		public List<ProfileGroupDTO> ProfileGroups { get; set; }
 		public ProfileOrbitaController(ApplicationDbContext context)
 		{
 			_context = context;
@@ -33,13 +33,14 @@ namespace DATAspNetCoreMVCMaxton.Controllers
 			return View(viewMainVM);
 
 		}
+
 		// Phương thức này lấy danh sách các ProfileGroup từ cơ sở dữ liệu
-		private async Task<List<ProfileGroupModel>> GetProfileGroupsAsync()
+		private async Task<List<ProfileGroupDTO>> GetProfileGroupsAsync()
 		{
 			return await _context.AspNetProfileGroup.ToListAsync();
 		}
 		// Phương thức này tạo danh sách SelectListItem từ danh sách ProfileGroup
-		private List<SelectListItem> CreateProfileGroupSelectList(List<ProfileGroupModel> profileGroups)
+		private List<SelectListItem> CreateProfileGroupSelectList(List<ProfileGroupDTO> profileGroups)
 		{
 			return profileGroups.Select(g => new SelectListItem
 			{

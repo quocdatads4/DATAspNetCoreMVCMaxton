@@ -7,7 +7,7 @@ namespace DATAspNetCoreMVCMaxton.Models
 	public class DashboardModel
 	{
 		public IEnumerable<SelectListItem>? ProfileGroupSelectList { get; set; }
-		public List<ProfileOrbitaModel>? ProfileOrbitas { get; set; }
+		public List<ProfileOrbitaDTO>? ProfileOrbitas { get; set; }
         public List<UserAccountModel>? UserAccount { get; set; }
 	}
 }

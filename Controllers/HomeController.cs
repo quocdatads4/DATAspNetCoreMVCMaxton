@@ -1,4 +1,5 @@
-﻿using DATAspNetCoreMVCMaxton.Data;
+﻿using DATAspNetCoreMVCMaxton.BusinessLogic;
+using DATAspNetCoreMVCMaxton.DataAccess;
 using DATAspNetCoreMVCMaxton.Models;
 using DATAspNetCoreMVCMaxton.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -13,24 +14,27 @@ namespace DATAspNetCoreMVCMaxton.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext _context;
-        public List<ProfileGroupModel> ProfileGroups { get; set; }
-        public List<ProfileOrbitaModel> ProfileOrbitas { get; set; }
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+        public List<ProfileGroupDTO> ProfileGroups { get; set; }
+        public List<ProfileOrbitaDTO> ProfileOrbitas { get; set; }
+
+        private readonly IProfileGroupService _profileGroupService;
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context, IProfileGroupService profileGroupService)
         {
             _logger = logger;
             _context = context;
+            _profileGroupService = profileGroupService;
         }
 
-
         public async Task<IActionResult> Index()
-		{
+        {
 
-            var profileGroups = await GetProfileGroupsAsync();
             var profileOrbitas = await GetProfileOrbitasAsync();
 
             int profileCount = profileOrbitas.Count;
 
-            var profileGroupSelectList = CreateProfileGroupSelectList(profileGroups);
+            // Sử dụng async await để nhận danh sách SelectListItem
+            var profileGroupSelectList = await CreateProfileGroupSelectList();
+
             var dashboardModel = CreateDashboardModel(profileGroupSelectList, profileOrbitas);
 
             // Điền dữ liệu cần thiết vào từng model
@@ -42,37 +46,22 @@ namespace DATAspNetCoreMVCMaxton.Controllers
             };
 
             return View(viewMainVM);
+
         }
-
-       
-
-        // Phương thức này lấy danh sách các ProfileGroup từ cơ sở dữ liệu
-        private async Task<List<ProfileGroupModel>> GetProfileGroupsAsync()
+        private async Task<List<SelectListItem>> CreateProfileGroupSelectList()
         {
-            return await _context.AspNetProfileGroup.ToListAsync();
+            return await _profileGroupService.CreateProfileGroupSelectListAsync();
         }
+
 
         // Phương thức này lấy danh sách các ProfileOrbita từ cơ sở dữ liệu
-        private async Task<List<ProfileOrbitaModel>> GetProfileOrbitasAsync()
+        private async Task<List<ProfileOrbitaDTO>> GetProfileOrbitasAsync()
         {
             return await _context.AspNetProfileOrbita.ToListAsync();
         }
 
-        // Phương thức này tạo danh sách SelectListItem từ danh sách ProfileGroup
-        private List<SelectListItem> CreateProfileGroupSelectList(List<ProfileGroupModel> profileGroups)
-        {
-            return profileGroups.Select(g => new SelectListItem
-            {
-                Value = g.Id.ToString(),
-                Text = g.Name
-            }).ToList();
-        }
-
         // Phương thức này tạo DashboardModel từ các tham số đầu vào
-        private DashboardModel CreateDashboardModel(
-            List<SelectListItem> profileGroupSelectList, 
-            List<ProfileOrbitaModel> profileOrbitas
-            )
+        private DashboardModel CreateDashboardModel(List<SelectListItem> profileGroupSelectList, List<ProfileOrbitaDTO> profileOrbitas)
         {
             return new DashboardModel
             {

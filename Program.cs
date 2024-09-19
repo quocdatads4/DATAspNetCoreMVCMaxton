@@ -1,4 +1,5 @@
-using DATAspNetCoreMVCMaxton.Data;
+﻿using DATAspNetCoreMVCMaxton.BusinessLogic;
+using DATAspNetCoreMVCMaxton.DataAccess;
 using DATAspNetCoreMVCMaxton.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddIdentity<ApplicationUserModel, IdentityRole>()
 	.AddEntityFrameworkStores<ApplicationDbContext>()
 	.AddDefaultTokenProviders();
+// Register repositories and services
+builder.Services.AddScoped<IProfileGroupRepository, ProfileGroupRepository>();
+builder.Services.AddScoped<IProfileGroupService, ProfileGroupService>();
+
+
 
 var app = builder.Build();
 
@@ -38,6 +44,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=ProfileOrbita}/{action=CreateProfileOrbita}/{id?}");
+    pattern: "{controller=ProfileGroup}/{action=ProfileGroupList}/{id?}");
 
 app.Run();
