@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DATAspNetCoreMVCMaxton
 build_property.RootNamespace = DATAspNetCoreMVCMaxton
@@ -17,6 +25,22 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = E:\DATSoftware\DATAspNetCoreMVCMaxton
 build_property._RazorSourceGeneratorDebug = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/Admin/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcRm9vdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Auth/Basiclogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxCYXNpY2xvZ2luLmNzaHRtbA==

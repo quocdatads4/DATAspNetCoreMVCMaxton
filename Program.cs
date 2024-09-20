@@ -19,7 +19,9 @@ builder.Services.AddIdentity<ApplicationUserModel, IdentityRole>()
 // Register repositories and services
 builder.Services.AddScoped<IProfileGroupRepository, ProfileGroupRepository>();
 builder.Services.AddScoped<IProfileGroupService, ProfileGroupService>();
-
+// Register repositories và services
+builder.Services.AddScoped<IProfileOrbitaRepository, ProfileOrbitaRepository>();
+builder.Services.AddScoped<IProfileOrbitaService, ProfileOrbitaService>();
 
 
 var app = builder.Build();
@@ -42,8 +44,19 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// Routing configuration
+app.MapControllerRoute(
+    name: "admin",
+    pattern: "Admin/{controller=Home}/{action=Index}/{id?}",
+    defaults: new { area = "Admin" });
+
+app.MapControllerRoute(
+    name: "user",
+    pattern: "User/{controller=Home}/{action=Index}/{id?}",
+    defaults: new { area = "User" });
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=ProfileGroup}/{action=ProfileGroupList}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

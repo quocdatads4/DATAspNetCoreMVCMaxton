@@ -1,4 +1,5 @@
-﻿using DATAspNetCoreMVCMaxton.DataAccess;
+﻿using DATAspNetCoreMVCMaxton.BusinessLogic;
+using DATAspNetCoreMVCMaxton.DataAccess;
 using DATAspNetCoreMVCMaxton.Models;
 using DATAspNetCoreMVCMaxton.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -8,53 +9,84 @@ using System.Diagnostics;
 
 namespace DATAspNetCoreMVCMaxton.Controllers
 {
-	public class ProfileOrbitaController : Controller
-	{
-		private readonly ApplicationDbContext _context;
-		public List<ProfileGroupDTO> ProfileGroups { get; set; }
-		public ProfileOrbitaController(ApplicationDbContext context)
-		{
-			_context = context;
-		}
+    public class ProfileOrbitaController : Controller
+    {
+        private readonly IProfileOrbitaService _profileOrbitaService;
 
-		[HttpGet]
-		public async Task<IActionResult> CreateProfileOrbita()
-		{
+        public ProfileOrbitaController(IProfileOrbitaService profileOrbitaService)
+        {
+            _profileOrbitaService = profileOrbitaService;
+        }
 
-			var profileGroups = await GetProfileGroupsAsync();
-			var profileGroupSelectList = CreateProfileGroupSelectList(profileGroups);
-			var dashboardModel = CreateDashboardModel(profileGroupSelectList);
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            var profileOrbitaList = await _profileOrbitaService.GetAllProfileOrbitaAsync();
+            return View(profileOrbitaList);
+        }
 
-			var viewMainVM = new MainVM
-			{
-				Dashboard = dashboardModel
-			};
+        [HttpGet]
+        public async Task<IActionResult> Details(int id)
+        {
+            var profileOrbita = await _profileOrbitaService.GetProfileOrbitaByIdAsync(id);
+            if (profileOrbita == null) return NotFound();
 
-			return View(viewMainVM);
+            return View(profileOrbita);
+        }
 
-		}
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
 
-		// Phương thức này lấy danh sách các ProfileGroup từ cơ sở dữ liệu
-		private async Task<List<ProfileGroupDTO>> GetProfileGroupsAsync()
-		{
-			return await _context.AspNetProfileGroup.ToListAsync();
-		}
-		// Phương thức này tạo danh sách SelectListItem từ danh sách ProfileGroup
-		private List<SelectListItem> CreateProfileGroupSelectList(List<ProfileGroupDTO> profileGroups)
-		{
-			return profileGroups.Select(g => new SelectListItem
-			{
-				Value = g.Id.ToString(),
-				Text = g.Name
-			}).ToList();
-		}
-		// Phương thức này tạo DashboardModel từ các tham số đầu vào
-		private DashboardModel CreateDashboardModel(List<SelectListItem> profileGroupSelectList)
-		{
-			return new DashboardModel
-			{
-				ProfileGroupSelectList = profileGroupSelectList,
-			};
-		}
-	}
+        [HttpPost]
+        public async Task<IActionResult> Create(ProfileOrbitaDTO profileOrbita)
+        {
+            if (ModelState.IsValid)
+            {
+                await _profileOrbitaService.AddProfileOrbitaAsync(profileOrbita);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(profileOrbita);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var profileOrbita = await _profileOrbitaService.GetProfileOrbitaByIdAsync(id);
+            if (profileOrbita == null) return NotFound();
+
+            return View(profileOrbita);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(ProfileOrbitaDTO profileOrbita)
+        {
+            if (ModelState.IsValid)
+            {
+                await _profileOrbitaService.UpdateProfileOrbitaAsync(profileOrbita);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(profileOrbita);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var profileOrbita = await _profileOrbitaService.GetProfileOrbitaByIdAsync(id);
+            if (profileOrbita == null) return NotFound();
+
+            return View(profileOrbita);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var success = await _profileOrbitaService.DeleteProfileOrbitaAsync(id);
+            if (!success) return NotFound();
+
+            return RedirectToAction(nameof(Index));
+        }
+    }
 }

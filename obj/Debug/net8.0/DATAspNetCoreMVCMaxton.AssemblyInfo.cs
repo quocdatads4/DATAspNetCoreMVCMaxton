@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DATAspNetCoreMVCMaxton")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c65847cb30f9d15a0618ba0b8724683a72238b08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35878bf5e97288c36bbb89f32da76d71774555fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("DATAspNetCoreMVCMaxton")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DATAspNetCoreMVCMaxton")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
