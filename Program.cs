@@ -1,6 +1,7 @@
-﻿using DATAspNetCoreMVCMaxton.BusinessLogic;
+﻿using DATAspNetCoreMVCMaxton.Areas.User.BusinessLogic;
+using DATAspNetCoreMVCMaxton.Areas.User.Data;
+using DATAspNetCoreMVCMaxton.Areas.User.Models;
 using DATAspNetCoreMVCMaxton.DataAccess;
-using DATAspNetCoreMVCMaxton.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,18 +11,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // Configure services
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<DATAspNetCoreMVCMaxton.Areas.User.Data.ApplicationDbContext>(options =>
 	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddIdentity<ApplicationUserModel, IdentityRole>()
-	.AddEntityFrameworkStores<ApplicationDbContext>()
+builder.Services.AddIdentity<AppUserDTO, IdentityRole>()
+	.AddEntityFrameworkStores<DATAspNetCoreMVCMaxton.Areas.User.Data.ApplicationDbContext>()
 	.AddDefaultTokenProviders();
 // Register repositories and services
-builder.Services.AddScoped<IProfileGroupRepository, ProfileGroupRepository>();
-builder.Services.AddScoped<IProfileGroupService, ProfileGroupService>();
+builder.Services.AddScoped<IProfileGroupDAL, ProfileGroupRepository>();
+builder.Services.AddScoped<IProfileGroupBLL, ProfileGroupService>();
 // Register repositories và services
-builder.Services.AddScoped<IProfileOrbitaRepository, ProfileOrbitaRepository>();
-builder.Services.AddScoped<IProfileOrbitaService, ProfileOrbitaService>();
+builder.Services.AddScoped<IProfileOrbitasDAL, ProfileOrbitaRepository>();
+builder.Services.AddScoped<IProfileOrbitasBLL, ProfileOrbitaService>();
 
 
 var app = builder.Build();

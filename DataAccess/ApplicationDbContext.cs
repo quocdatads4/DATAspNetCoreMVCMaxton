@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using DATAspNetCoreMVCMaxton.Models;
+using DATAspNetCoreMVCMaxton.Areas.User.Models;
 
 namespace DATAspNetCoreMVCMaxton.DataAccess
 {
-	public class ApplicationDbContext : IdentityDbContext<ApplicationUserModel>
+    public class ApplicationDbContext : IdentityDbContext<AppUserDTO>
 	{
 		public DbSet<ProfileOrbitaDTO> AspNetProfileOrbita { get; set; }
 		public DbSet<ProfileGroupDTO> AspNetProfileGroup { get; set; }
-		public DbSet<UserAccountModel> AspNetUserAccounts { get; set; }
+		public DbSet<UserAccountDTO> AspNetUserAccounts { get; set; }
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
 			: base(options)
 		{
@@ -17,7 +17,7 @@ namespace DATAspNetCoreMVCMaxton.DataAccess
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			// Configure automatic primary key generation if needed
-			modelBuilder.Entity<UserAccountModel>()
+			modelBuilder.Entity<UserAccountDTO>()
 						.Property(p => p.Id)
 						.ValueGeneratedOnAdd();
 			modelBuilder.Entity<ProfileGroupDTO>().Property(p => p.Id).ValueGeneratedOnAdd();

@@ -10,13 +10,6 @@
     <main class="main-wrapper">
         <div class="main-content">
 
-            <!--Kết nối với Model-->
-
-            @await Html.PartialAsync("~/Views/Shared/Topbar.cshtml")
-            @await Html.PartialAsync("~/Views/Shared/Sidebar.cshtml")
-
-            <!--End Kết nối với Model-->
-
             @RenderBody()
 
             @RenderSection("externalhtml", false)
