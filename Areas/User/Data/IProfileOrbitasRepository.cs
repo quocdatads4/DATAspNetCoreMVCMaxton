@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DATAspNetCoreMVCMaxton.Areas.User.Data
 {
-    public interface IProfileOrbitasDAL
+    public interface IProfileOrbitasRepository
     {
         Task<List<ProfileOrbitaDTO>> GetAllProfileOrbitaAsync();
         Task<ProfileOrbitaDTO> GetProfileOrbitaByIdAsync(int id);
@@ -14,7 +14,7 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
 		Task<IEnumerable<ProfileOrbitaDTO>> GetProfileOrbitasByGroupAsync(int profileGroupId);
 	}
 	
-	public class ProfileOrbitaRepository : IProfileOrbitasDAL
+	public class ProfileOrbitaRepository : IProfileOrbitasRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -44,7 +44,7 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
             await _context.AspNetProfileOrbita.AddAsync(profileOrbita);
             await _context.SaveChangesAsync();
         }
-
+       
         public async Task UpdateProfileOrbitaAsync(ProfileOrbitaDTO profileOrbita)
         {
             _context.AspNetProfileOrbita.Update(profileOrbita);

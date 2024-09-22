@@ -12,22 +12,27 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        private readonly IProfileGroupBLL _profileGroupBLL; // Assuming you have a service for handling profile groups
-        private readonly IProfileOrbitasBLL _profileOrbitaBLL; // Assuming you have a service for handling profile orbitas
-        public HomeController(ILogger<HomeController> logger, IProfileGroupBLL profileGroupService, IProfileOrbitasBLL profileOrbitaService)
+        private readonly IProfileGroupService _profileGroupService; // Assuming you have a service for handling profile groups
+        private readonly IProfileOrbitasBLL _profileOrbitaService; // Assuming you have a service for handling profile orbitas
+        private readonly IFacebookAccountService _facebookAccountService;
+        public HomeController(ILogger<HomeController> logger, 
+            IProfileGroupService profileGroupService, 
+            IProfileOrbitasBLL profileOrbitaService, 
+            IFacebookAccountService facebookAccountService)
         {
             _logger = logger;
-            _profileGroupBLL = profileGroupService;
-            _profileOrbitaBLL = profileOrbitaService;
+            _profileGroupService = profileGroupService;
+            _profileOrbitaService = profileOrbitaService;
+            _facebookAccountService = facebookAccountService;
         }
 
 		public async Task<IActionResult> Index()
 		{
-			var model = new _UserMainDTO
-			{
-				ProfileGroupSelectList = await _profileGroupBLL.CreateProfileGroupSelectListAsync(),
-				ProfileOrbitas = new List<ProfileOrbitaDTO>() // Không hiển thị dữ liệu khi chưa chọn nhóm
-			};
+            var model = new _UserMainDTO
+            {
+                ProfileGroupSelectList = await _profileGroupService.CreateProfileGroupSelectListAsync(),
+                ProfileOrbitasList = await _profileOrbitaService.GetAll_ProfileOrbita_List(),
+            };
 
 			return View(model);
 		}
@@ -42,31 +47,40 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Controllers
             }
 
             // Gọi hàm từ BLL để lấy danh sách ProfileOrbita theo nhóm
-            var profileOrbitas = await _profileOrbitaBLL.GetProfileOrbitasByGroupAsync(profileGroupId);
+            var profileOrbitas = await _profileOrbitaService.GetProfileOrbitasByGroupAsync(profileGroupId);
             return Json(profileOrbitas); // Trả về dữ liệu dưới dạng JSON
         }
+        // Action để lấy danh sách Facebook Account
+        [HttpGet]
+        public async Task<IActionResult> GetFacebookAccountList()
+        {
 
-        //public async Task<IActionResult> Index()
-        //{
-        //    var profileOrbitas = await _profileOrbitaService.GetAll_ProfileOrbita_List();
+            // Gọi hàm từ BLL để lấy danh sách Facebook Account
+            var facebookAccount = await _facebookAccountService.GetAllFacebookAccountList();
+            return Json(facebookAccount); // Trả về dữ liệu dưới dạng JSON
+        }
+        // Action để lấy danh sách Facebook Account
+        [HttpGet]
+        public async Task<IActionResult> GetProfileGroupList()
+        {
 
-        //    var profileGroups = await _profileGroupService.GetProfileGroupsAsync();
-        //    var model = new _UserMainDTO
-        //    {
-        //        ProfileGroupSelectList = profileGroups.Select(pg => new SelectListItem
-        //        {
-        //            Value = pg.Id.ToString(),
-        //            Text = pg.Name
-        //        }).ToList(),
-
-        //        ProfileOrbitas = profileOrbitas.ToList() // Assuming GetProfileOrbitasAsync returns an IEnumerable<ProfileOrbitaDTO>
-        //    };
-
-        //    return View(model);
-        //}
-
-
-
+            // Gọi hàm từ BLL để lấy danh sách Facebook Account
+            var profileGroup = await _profileGroupService.GetProfileGroupsAsync();
+            return Json(profileGroup); // Trả về dữ liệu dưới dạng JSON
+        }
+        [HttpPost]
+        [HttpPost]
+        public async Task<IActionResult> EditProfileOrbita([FromBody] _UserMainDTO model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _profileOrbitaService.EditProfileOrbitaAsyncTable(model);
+                if (result)
+                    return Ok(true); // Trả về HTTP 200 cùng với dữ liệu thành công
+                return NotFound();
+            }
+            return BadRequest(ModelState);
+        }
         public IActionResult Privacy()
         {
             return View();

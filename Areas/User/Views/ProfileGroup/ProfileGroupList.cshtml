@@ -14,7 +14,7 @@
 		<h6 class="mb-0 text-uppercase">Thêm nhóm mới</h6>
 		<hr>
 		<div class="col-md-12">
-			<form asp-action="AddProfileGroup" method="post">
+			<form asp-area="User" asp-action="AddProfileGroup" method="post">
 				<div class="mb-3">
 					<label for="name" class="form-label">Tên nhóm</label>
 					<input type="text" class="form-control" id="name" name="name" placeholder="Tên nhóm...">
@@ -50,8 +50,8 @@
 								<td>@group.CreatedDate.ToString("dd/MM/yyyy")</td>
 								<td>
 									<div class="btn-group">
-										<a asp-action="EditProfileGroup" asp-route-id="@group.Id" class="btn btn-outline-success">Sửa</a>
-										<form asp-action="DeleteProfileGroup" method="post" style="display:inline;">
+										<a asp-area="User" asp-action="EditProfileGroup" asp-route-id="@group.Id" class="btn btn-outline-success">Sửa</a>
+										<form asp-area="User" asp-action="DeleteProfileGroup" method="post" style="display:inline;">
 											<input type="hidden" name="id" value="@group.Id" />
 											<button type="submit" class="btn btn-outline-danger">Xoá</button>
 										</form>

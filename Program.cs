@@ -18,12 +18,19 @@ builder.Services.AddIdentity<AppUserDTO, IdentityRole>()
 	.AddEntityFrameworkStores<DATAspNetCoreMVCMaxton.Areas.User.Data.ApplicationDbContext>()
 	.AddDefaultTokenProviders();
 // Register repositories and services
-builder.Services.AddScoped<IProfileGroupDAL, ProfileGroupRepository>();
-builder.Services.AddScoped<IProfileGroupBLL, ProfileGroupService>();
+builder.Services.AddScoped<IProfileGroupRepository, ProfileGroupRepository>();
+builder.Services.AddScoped<IProfileGroupService, ProfileGroupService>();
 // Register repositories và services
-builder.Services.AddScoped<IProfileOrbitasDAL, ProfileOrbitaRepository>();
+builder.Services.AddScoped<IProfileOrbitasRepository, ProfileOrbitaRepository>();
 builder.Services.AddScoped<IProfileOrbitasBLL, ProfileOrbitaService>();
 
+// Register repositories và services
+builder.Services.AddScoped<IUserAccountRepository, UserAccountRepository>();
+builder.Services.AddScoped<IUserAccountService, UserAccountService>();
+
+// Register repositories và services
+builder.Services.AddScoped<IFacebookAccountRepository, FacebookAccountRepository>();
+builder.Services.AddScoped<IFacebookAccountService, FacebookAccountService>();
 
 var app = builder.Build();
 

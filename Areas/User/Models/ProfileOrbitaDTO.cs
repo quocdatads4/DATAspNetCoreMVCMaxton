@@ -7,7 +7,7 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         public string? ProfileName { get; set; }
         public string? Status { get; set; }

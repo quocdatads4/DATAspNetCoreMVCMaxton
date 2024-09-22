@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DATAspNetCoreMVCMaxton.Areas.User.Models
 {
-    public class GoogleSocialDTO
+    public class GoogleAccountDTO
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // This attribute makes Id auto-increment

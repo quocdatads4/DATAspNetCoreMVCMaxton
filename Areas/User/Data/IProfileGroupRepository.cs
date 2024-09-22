@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DATAspNetCoreMVCMaxton.Areas.User.Data
 {
-    public interface IProfileGroupDAL
+    public interface IProfileGroupRepository
     {
         Task<List<ProfileGroupDTO>> GetProfileGroupsAsync();
         Task<List<ProfileGroupDTO>> GetAllProfileGroupsAsync();
@@ -14,7 +14,7 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
         Task UpdateProfileGroupAsync(ProfileGroupDTO profileGroup);
     }
 
-    public class ProfileGroupRepository : IProfileGroupDAL
+    public class ProfileGroupRepository : IProfileGroupRepository
     {
         private readonly ApplicationDbContext _context;
 

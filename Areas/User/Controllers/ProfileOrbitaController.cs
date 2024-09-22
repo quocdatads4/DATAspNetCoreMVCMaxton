@@ -12,8 +12,8 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Controllers
     public class ProfileOrbitaController : Controller
     {
         private readonly IProfileOrbitasBLL _profileOrbitaService;
-        private readonly IProfileGroupBLL _profileGroupService; // Assuming you have a service for handling profile groups
-        public ProfileOrbitaController(IProfileOrbitasBLL profileOrbitaService, IProfileGroupBLL profileGroupService)
+        private readonly IProfileGroupService _profileGroupService; // Assuming you have a service for handling profile groups
+        public ProfileOrbitaController(IProfileOrbitasBLL profileOrbitaService, IProfileGroupService profileGroupService)
         {
             _profileOrbitaService = profileOrbitaService;
             _profileGroupService = profileGroupService;
@@ -67,42 +67,48 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Controllers
             return View(profileOrbita);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Edit(int id)
-        {
-            var profileOrbita = await _profileOrbitaService.GetProfileOrbitaByIdAsync(id);
-            if (profileOrbita == null) return NotFound();
 
-            return View(profileOrbita);
+
+        [HttpGet]
+        public async Task<IActionResult> EditProfileOrbita(int id)
+        {
+            var profileGroupSelectList = await _profileGroupService.CreateProfileGroupSelectListAsync();
+            var profileOrbitas = await _profileOrbitaService.GetProfileOrbitaForEditAsync(id);
+
+            var model = new _UserMainDTO
+            {
+                ProfileGroupSelectList = profileGroupSelectList,
+                ProfileOrbitas = profileOrbitas.ProfileOrbitas
+            };
+
+            return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(ProfileOrbitaDTO profileOrbita)
+        public async Task<IActionResult> EditProfileOrbita(_UserMainDTO model)
         {
             if (ModelState.IsValid)
             {
-                await _profileOrbitaService.UpdateProfileOrbitaAsync(profileOrbita);
-                return RedirectToAction(nameof(Index));
+                var result = await _profileOrbitaService.EditProfileOrbitaAsync(model);
+                if (result) return RedirectToAction(nameof(Index), "Home", new { area = "User" });
+                return NotFound();
             }
-            return View(profileOrbita);
+            return View(new _UserMainDTO { ProfileGroup = model.ProfileGroup });
         }
-
-        [HttpGet]
-        public async Task<IActionResult> Delete(int id)
+        [HttpPost]
+        public async Task<IActionResult> DeleteProfileOrbita(int id)
         {
-            var profileOrbita = await _profileOrbitaService.GetProfileOrbitaByIdAsync(id);
-            if (profileOrbita == null) return NotFound();
+            var result = await _profileOrbitaService.DeleteProfileOrbitaAsync(id);
+            if (result)
+            {
+                // Profile group deleted successfully
+            }
+            else
+            {
+                // Profile group not found or could not be deleted
+            }
 
-            return View(profileOrbita);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var success = await _profileOrbitaService.DeleteProfileOrbitaAsync(id);
-            if (!success) return NotFound();
-
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Index), "Home", new { area = "User" });
         }
     }
 }

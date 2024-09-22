@@ -21,7 +21,7 @@ namespace DATAspNetCoreMVCMaxton.DataAccess
 						.Property(p => p.Id)
 						.ValueGeneratedOnAdd();
 			modelBuilder.Entity<ProfileGroupDTO>().Property(p => p.Id).ValueGeneratedOnAdd();
-			modelBuilder.Entity<ProfileOrbitaDTO>().Property(p => p.ID).ValueGeneratedOnAdd();
+			modelBuilder.Entity<ProfileOrbitaDTO>().Property(p => p.Id).ValueGeneratedOnAdd();
 			base.OnModelCreating(modelBuilder);
 		}
 	}

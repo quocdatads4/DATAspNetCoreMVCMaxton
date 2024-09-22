@@ -10,7 +10,7 @@
         <h6 class="mb-0 text-uppercase">Cập nhật nhóm</h6>
         <hr>
         <div class="col-md-12">
-            <form asp-action="EditProfileGroup" method="post">
+            <form asp-area="User" asp-action="EditProfileGroup" method="post">
                 <div class="mb-3">
                     <label asp-for="ProfileGroup.Name" class="form-label">Tên nhóm</label>
                     <input asp-for="ProfileGroup.Name" class="form-control" />

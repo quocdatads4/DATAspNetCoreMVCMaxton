@@ -54,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9maWxlT3JiaXRhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/ProfileOrbita/EditProfileOrbita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9maWxlT3JiaXRhXEVkaXRQcm9maWxlT3JiaXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Css.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcQ3NzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

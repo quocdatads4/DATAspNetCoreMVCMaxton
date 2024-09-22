@@ -1,0 +1,49 @@
+﻿@model DATAspNetCoreMVCMaxton.Areas.User.Models._UserMainDTO
+@{
+    ViewBag.Title = "Tài khoản";
+    ViewBag.pTitle = "Thông tin tài khoản";
+    Layout = "~/Areas/User/Views/Shared/_Main.cshtml";
+}
+
+<div class="row">
+    <div class="col-12 col-xl-8">
+        <div class="card rounded-4 border-top border-4 border-primary border-gradient-1">
+            <div class="card-body p-4">
+                <div class="d-flex align-items-start justify-content-between mb-3">
+                    <div class="">
+                        <h5 class="mb-0 fw-bold">Cập nhật hồ sơ</h5>
+                    </div>
+                    
+                </div>
+                <form asp-area="User" asp-controller="ProfileOrbita" asp-action="EditProfileOrbita" method="post" class="row g-4">
+                    <div class="col-md-6">
+                        <label asp-for="ProfileOrbitas.ProfileName" class="form-label">Tên hồ sơ</label>
+                        <input asp-for="ProfileOrbitas.ProfileName" class="form-control" />
+                        <span asp-validation-for="ProfileOrbitas.ProfileName" class="text-danger"></span>
+                    </div>
+                  
+                    <div class="col-md-6">
+                        <label for="input2" class="form-label">Nhóm hồ sơ</label>
+                        <select name="SelectedProfileGroup" id="SelectedProfileGroup" class="form-select">
+                            @foreach (var group in Model.ProfileGroupSelectList)
+                            {
+                                <option value="@group.Value">@group.Text</option>
+                            }
+                        </select>
+                    </div>
+
+                    <input type="hidden" asp-for="ProfileOrbitas.Id" />
+                    <div class="d-md-flex d-grid align-items-center gap-3">
+                        <button type="submit" class="btn btn-grd-primary px-4">Cập nhật</button>
+                    </div>
+      
+                </form>
+
+            
+            </div>
+        </div>
+    </div>
+
+</div><!--end row-->
+
+

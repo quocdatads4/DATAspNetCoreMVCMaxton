@@ -7,23 +7,22 @@ using Microsoft.EntityFrameworkCore;
 namespace DATAspNetCoreMVCMaxton.Areas.User.BusinessLogic
 {
 
-    public interface IProfileGroupBLL
+    public interface IProfileGroupService
     {
         Task<_UserMainDTO> GetProfileGroupListAsync();
-        Task<bool> DeleteProfileGroupAsync(int id);
-        Task AddProfileGroupAsync(ProfileGroupDTO profileGroup);
         Task<_UserMainDTO> GetProfileGroupForEditAsync(int id);
-        Task<bool> EditProfileGroupAsync(_UserMainDTO model);
-        Task<List<SelectListItem>> CreateProfileGroupSelectListAsync();
         Task<IEnumerable<ProfileGroupDTO>> GetProfileGroupsAsync();
-
+        Task<List<SelectListItem>> CreateProfileGroupSelectListAsync();
+        Task AddProfileGroupAsync(ProfileGroupDTO profileGroup);
+        Task<bool> DeleteProfileGroupAsync(int id);
+        Task<bool> EditProfileGroupAsync(_UserMainDTO model);
     }
 
-    public class ProfileGroupService : IProfileGroupBLL
+    public class ProfileGroupService : IProfileGroupService
     {
-        private readonly IProfileGroupDAL _profileGroupRepository;
+        private readonly IProfileGroupRepository _profileGroupRepository;
 
-        public ProfileGroupService(IProfileGroupDAL profileGroupRepository)
+        public ProfileGroupService(IProfileGroupRepository profileGroupRepository)
         {
             _profileGroupRepository = profileGroupRepository;
         }

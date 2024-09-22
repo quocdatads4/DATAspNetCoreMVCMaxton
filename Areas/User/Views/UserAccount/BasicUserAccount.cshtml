@@ -20,7 +20,6 @@
             </ol>
         </nav>
     </div>
-    
 </div>
 
 <div class="card rounded-4">
@@ -71,7 +70,20 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-md-12">
+
+                    <form asp  asp-action="UploadAvatar" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="avatar">Upload avatar</label>
+                            <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg" />
+                        </div>
+                        <input type="hidden" name="userAccountId" value="@Model.UserAccount.Id" />
+                        <button type="submit" class="btn btn-primary">Upload</button>
+                    </form>
+
+                </div>
                 <form class="row g-4">
+                    
                     <div class="col-md-6">
                         <label for="input1" class="form-label">Tên</label>
                         <input type="text" class="form-control" id="input1" placeholder="Tên..." value="@Model.UserAccount.FirstName">
@@ -89,19 +101,18 @@
                         <input type="email" class="form-control" id="input4" placeholder="Địa chỉ Email..." value="@Model.UserAccount.Email">
                     </div>
                     <div class="col-md-12">
-                        <label for="input11" class="form-label">Địa chỉ</label>
-                        <textarea class="form-control" id="address" placeholder="Địa chỉ ..." rows="4" cols="4" value="@Model.UserAccount.Address"></textarea>
+                        <label for="address" class="form-label">Địa chỉ</label>
+                        <textarea class="form-control" id="address" placeholder="Địa chỉ ..." rows="4" cols="4">@Model.UserAccount.Address</textarea>
                     </div>
                     <div class="col-md-12">
-                        <label for="input11" class="form-label">Facebook</label>
-                        <input type="text" class="form-control" id="input4" placeholder="Đường dẫn Facebook..." value="@Model.UserAccount.FacebookID">
+                        <label for="facebook" class="form-label">Facebook</label>
+                        <input type="text" class="form-control" id="facebook" placeholder="Đường dẫn Facebook..." value="@Model.UserAccount.FacebookID">
                     </div>
-                    <div class="col-md-12">
+                   @*  <div class="col-md-12">
                         <div class="d-md-flex d-grid align-items-center gap-3">
                             <button type="button" class="btn btn-grd-primary px-4">Cập nhật tài khoản</button>
-
                         </div>
-                    </div>
+                    </div> *@
                 </form>
             </div>
         </div>
@@ -130,8 +141,8 @@
                         <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">account_circle</span><p class="mb-0">Tên khách hàng: @Model.UserAccount.LastName @Model.UserAccount.FirstName</p></div>
                         <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">done</span><p class="mb-0">Trạng thái: active</p></div>
                         <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">code</span><p class="mb-0">Quyền: Developer</p></div>
-                        <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">flag</span><p class="mb-0">Country: USA</p></div>
-                        <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">language</span><p class="mb-0">Ngôn ngữ: English</p></div>
+                        <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">flag</span><p class="mb-0">Country: @Model.UserAccount.Country</p></div>
+                        <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">language</span><p class="mb-0">Ngôn ngữ: @Model.UserAccount.Language</p></div>
                         <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">send</span><p class="mb-0">Email: @Model.UserAccount.Email</p></div>
                         <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">call</span><p class="mb-0">Điện thoại: @Model.UserAccount.PhoneNumber</p></div>
                         <div class="info-list-item d-flex align-items-center gap-3"><span class="material-icons-outlined">home</span><p class="mb-0">Địa chỉ: @Model.UserAccount.Address</p></div>
@@ -139,10 +150,8 @@
                 </div>
             </div>
         </div>
-
-
     </div>
-</div><!--end row-->
-@section scripts {
+</div>
 
+@section scripts {
 }

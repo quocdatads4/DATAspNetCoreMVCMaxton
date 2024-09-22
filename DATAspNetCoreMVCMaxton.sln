@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DATAspNetCoreMVCMaxton", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DATAspNETApiCoreMVC", "..\DATAspNETApiCoreMVC\DATAspNETApiCoreMVC.csproj", "{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DATWebViewMVC", "..\DATWebViewMVC\DATWebViewMVC.csproj", "{3F9D77E8-12CC-4783-9287-A682C26E8C02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA1A33FD-EF04-4E4E-8A9D-96B81C7D7C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9D77E8-12CC-4783-9287-A682C26E8C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9D77E8-12CC-4783-9287-A682C26E8C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9D77E8-12CC-4783-9287-A682C26E8C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9D77E8-12CC-4783-9287-A682C26E8C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

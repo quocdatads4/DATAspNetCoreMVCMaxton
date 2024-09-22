@@ -1,5 +1,7 @@
-﻿using DATAspNetCoreMVCMaxton.Areas.User.Models;
+﻿using DATAspNetCoreMVCMaxton.Areas.User.BusinessLogic;
+using DATAspNetCoreMVCMaxton.Areas.User.Models;
 using DATAspNetCoreMVCMaxton.DataAccess;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,35 +11,54 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Controllers
     public class UserAccountController : Controller
     {
 
-        private readonly ApplicationDbContext _context;
-        public List<UserAccountDTO> UserAccount { get; set; }
-        public UserAccountController(ApplicationDbContext context)
+        private readonly IUserAccountService _userBll;
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public UserAccountController(IUserAccountService userBll, IWebHostEnvironment webHostEnvironment)
         {
-            _context = context;
+            _userBll = userBll;
+            _webHostEnvironment = webHostEnvironment;
         }
 
-
-        // GET: UserAccount/Edit/1
+        // GET: UserAccount/BasicUserAccount
         [HttpGet]
         public async Task<IActionResult> BasicUserAccount()
         {
-
-            var userAccount = await GetUserAccountAsync(1);  // Lấy thông tin tài khoản người dùng với Id = 1
+            var userAccount = await _userBll.GetUserAccountByIdAsync(1);
+            if (userAccount == null)
+            {
+                return NotFound();
+            }
 
             var viewMainVM = new _UserMainDTO
             {
-                UserAccount = userAccount,
+                UserAccount = userAccount
             };
 
             return View(viewMainVM);
         }
-        // Phương thức này lấy thông tin tài khoản người dùng với Id
-        private async Task<UserAccountDTO> GetUserAccountAsync(int id)
+        [HttpPost]
+        public async Task<IActionResult> UploadAvatar(IFormFile avatar, int userAccountId)
         {
-            return await _context.AspNetUserAccounts.FirstOrDefaultAsync(u => u.Id == id);
-        }
-        // Phương thức này tạo DashboardModel từ các tham số đầu vào
+            if (avatar != null && (avatar.ContentType == "image/png" || avatar.ContentType == "image/jpeg"))
+            {
+                var fileName = $"{Guid.NewGuid()}_{Path.GetFileName(avatar.FileName)}";
+                var uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "uploads", "avatars", fileName);
 
+                using (var fileStream = new FileStream(uploadPath, FileMode.Create))
+                {
+                    await avatar.CopyToAsync(fileStream);
+                }
+
+                var userAccount = await _userBll.GetUserAccountByIdAsync(userAccountId);
+                userAccount.Avatar = $"/uploads/avatars/{fileName}";
+
+                await _userBll.UpdateUserAccountAsync(userAccount);
+
+                return RedirectToAction("BasicUserAccount");
+            }
+
+            return BadRequest("Invalid file format or upload failed.");
+        }
         public IActionResult SecurityUserAccount() { return View(); }
 
     }
