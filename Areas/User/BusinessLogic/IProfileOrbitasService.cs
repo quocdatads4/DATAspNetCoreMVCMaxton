@@ -5,21 +5,17 @@ using Microsoft.EntityFrameworkCore;
 namespace DATAspNetCoreMVCMaxton.Areas.User.BusinessLogic
 {
 
-    public interface IProfileOrbitasBLL
+    public interface IProfileOrbitasService
     {
-        Task<List<ProfileOrbitaDTO>> GetAll_ProfileOrbita_List();
-        Task<IEnumerable<ProfileOrbitaDTO>> Get_ProfileOrbitas_Enumerable();
-        Task<ProfileOrbitaDTO> GetProfileOrbitaByIdAsync(int id);
-        Task AddProfileOrbitaAsync(ProfileOrbitaDTO profileOrbita);
-        Task<bool> EditProfileOrbitaAsync(_UserMainDTO model);
-        Task<bool> EditProfileOrbitaAsyncTable(_UserMainDTO model);
+       Task<List<ProfileOrbitaDTO>> GetAllProfileOrbitaList();
+       Task<IEnumerable<ProfileOrbitaDTO>> GetProfileOrbitasByGroupAsync(int profileGroupId);
         Task<_UserMainDTO> GetProfileOrbitaForEditAsync(int id);
-        Task<bool> DeleteProfileOrbitaAsync(int id);
+        Task<bool> EditProfileOrbitaAsyncTable(_UserMainDTO model);
+        Task<bool> EditProfileOrbitaAsync(_UserMainDTO model);
 
-        // Thêm phương thức mới để lấy ProfileOrbita theo nhóm
-        Task<IEnumerable<ProfileOrbitaDTO>> GetProfileOrbitasByGroupAsync(int profileGroupId);
+        Task<bool> DeleteProfileOrbitaAsync(int id);
     }
-    public class ProfileOrbitaService : IProfileOrbitasBLL
+    public class ProfileOrbitaService : IProfileOrbitasService
     {
         private readonly IProfileOrbitasRepository _profileOrbitaRepository;
 
@@ -27,63 +23,45 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.BusinessLogic
         {
             _profileOrbitaRepository = profileOrbitaRepository;
         }
-
-        // Thêm phương thức mới để lấy ProfileOrbita theo nhóm
+        public async Task<List<ProfileOrbitaDTO>> GetAllProfileOrbitaList()
+        {
+            return await _profileOrbitaRepository.GetAllProfileOrbitaAsync();
+        }
         public async Task<IEnumerable<ProfileOrbitaDTO>> GetProfileOrbitasByGroupAsync(int profileGroupId)
         {
             return await _profileOrbitaRepository.GetProfileOrbitasByGroupAsync(profileGroupId);
         }
-        public async Task<IEnumerable<ProfileOrbitaDTO>> Get_ProfileOrbitas_Enumerable()
+        public async Task<bool> EditProfileOrbitaAsyncTable(_UserMainDTO model)
         {
-            return await _profileOrbitaRepository.GetAllProfileOrbitaAsync();
-        }
+            var profileOrbitaInDb = await _profileOrbitaRepository.GetProfileOrbitaByIdAsync(model.IdProfileOrbitaTable);
+            if (profileOrbitaInDb == null) return false;
 
-        public async Task<List<ProfileOrbitaDTO>> GetAll_ProfileOrbita_List()
-        {
-            return await _profileOrbitaRepository.GetAllProfileOrbitaAsync();
-        }
+            profileOrbitaInDb.ProfileGroupID = model.ProfileGroupIDTable;
 
-        public async Task<ProfileOrbitaDTO> GetProfileOrbitaByIdAsync(int id)
-        {
-            return await _profileOrbitaRepository.GetProfileOrbitaByIdAsync(id);
-        }
 
-        public async Task AddProfileOrbitaAsync(ProfileOrbitaDTO profileOrbita)
-        {
-            await _profileOrbitaRepository.AddProfileOrbitaAsync(profileOrbita);
+            await _profileOrbitaRepository.UpdateProfileOrbitaAsync(profileOrbitaInDb);
+            return true;
         }
         public async Task<_UserMainDTO> GetProfileOrbitaForEditAsync(int id)
         {
-            var profileOrbitaInDb = await _profileOrbitaRepository.GetProfileOrbitaByIdAsync(id);
-            if (profileOrbitaInDb == null) return null;
+            var profileOrbita = await _profileOrbitaRepository.GetProfileOrbitaByIdAsync(id);
+            if (profileOrbita == null) return null;
 
-            var mainVM = new _UserMainDTO { ProfileOrbitas = profileOrbitaInDb };
+            var mainVM = new _UserMainDTO { ProfileOrbita = profileOrbita };
             return mainVM;
         }
-  
         public async Task<bool> EditProfileOrbitaAsync(_UserMainDTO model)
         {
-            var profileOrbitaInDb = await _profileOrbitaRepository.GetProfileOrbitaByIdAsync(model.ProfileOrbitas.Id);
+            var profileOrbitaInDb = await _profileOrbitaRepository.GetProfileOrbitaByIdAsync(model.ProfileOrbita.Id);
             if (profileOrbitaInDb == null) return false;
 
-            profileOrbitaInDb.ProfileName = model.ProfileOrbitas.ProfileName;
+            profileOrbitaInDb.ProfileName = model.ProfileOrbita.ProfileName;
+            profileOrbitaInDb.ProfileGroupID = model.ProfileOrbita.ProfileGroupID;
 
 
             await _profileOrbitaRepository.UpdateProfileOrbitaAsync(profileOrbitaInDb);
             return true;
         }
-        public async Task<bool> EditProfileOrbitaAsyncTable(_UserMainDTO model)
-        {
-            var profileOrbitaInDb = await _profileOrbitaRepository.GetProfileOrbitaByIdAsync(model.Id);
-            if (profileOrbitaInDb == null) return false;
-
-            profileOrbitaInDb.ProfileGroupID = model.ProfileGroupID;
-
-
-            await _profileOrbitaRepository.UpdateProfileOrbitaAsync(profileOrbitaInDb);
-            return true;
-        }
-
         public async Task<bool> DeleteProfileOrbitaAsync(int id)
         {
             var profileOrbita = await _profileOrbitaRepository.GetProfileOrbitaByIdAsync(id);

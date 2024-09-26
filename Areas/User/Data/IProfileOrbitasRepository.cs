@@ -7,12 +7,11 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
     public interface IProfileOrbitasRepository
     {
         Task<List<ProfileOrbitaDTO>> GetAllProfileOrbitaAsync();
+        Task<IEnumerable<ProfileOrbitaDTO>> GetProfileOrbitasByGroupAsync(int profileGroupId);
         Task<ProfileOrbitaDTO> GetProfileOrbitaByIdAsync(int id);
-        Task AddProfileOrbitaAsync(ProfileOrbitaDTO profileOrbita);
         Task UpdateProfileOrbitaAsync(ProfileOrbitaDTO profileOrbita);
         Task DeleteProfileOrbitaAsync(int id);
-		Task<IEnumerable<ProfileOrbitaDTO>> GetProfileOrbitasByGroupAsync(int profileGroupId);
-	}
+    }
 	
 	public class ProfileOrbitaRepository : IProfileOrbitasRepository
     {
@@ -33,24 +32,15 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
         {
             return await _context.AspNetProfileOrbita.ToListAsync();
         }
-
         public async Task<ProfileOrbitaDTO> GetProfileOrbitaByIdAsync(int id)
         {
             return await _context.AspNetProfileOrbita.FindAsync(id);
         }
-
-        public async Task AddProfileOrbitaAsync(ProfileOrbitaDTO profileOrbita)
-        {
-            await _context.AspNetProfileOrbita.AddAsync(profileOrbita);
-            await _context.SaveChangesAsync();
-        }
-       
         public async Task UpdateProfileOrbitaAsync(ProfileOrbitaDTO profileOrbita)
         {
             _context.AspNetProfileOrbita.Update(profileOrbita);
             await _context.SaveChangesAsync();
         }
-
         public async Task DeleteProfileOrbitaAsync(int id)
         {
             var profileOrbita = await _context.AspNetProfileOrbita.FindAsync(id);

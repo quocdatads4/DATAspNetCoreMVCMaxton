@@ -1265,6 +1265,18 @@
       "PackagePath": "staticwebassets\\sass\\semi-dark.scss"
     },
     {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\uploads\\453599865_1812957715780711_1047345180514395923_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\453599865_1812957715780711_1047345180514395923_n.jpg"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\uploads\\c295b62a-5007-4f9c-a1b7-83d96b18783a_453599865_1812957715780711_1047345180514395923_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c295b62a-5007-4f9c-a1b7-83d96b18783a_453599865_1812957715780711_1047345180514395923_n.jpg"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\uploads\\f5f88460-098e-4cba-8385-1d8e5defc0f0_453599865_1812957715780711_1047345180514395923_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f5f88460-098e-4cba-8385-1d8e5defc0f0_453599865_1812957715780711_1047345180514395923_n.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DATAspNetCoreMVCMaxton.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

@@ -1,0 +1,68 @@
+﻿@model DATAspNetCoreMVCMaxton.Areas.User.Models._UserMainDTO
+
+<div class="card-body">
+    <div class="table-responsive">
+        <table id="hometablegoogle" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectall" /></th>
+                    <th>Id</th>
+                    <th>Avatar</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>AppPassword</th>
+                    <th>BackupCode</th>
+                    <th>Code2FA</th>
+                    <th>EmailPrimary</th>
+                    <th>Status</th>
+                    <th>FacebookGroupID</th>
+                    <th>ProfileOrbitaID</th>
+                    <th>Name</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Birthday</th>
+                    <th>Phone</th>
+                    <th>Note</th>
+                    <th>Hành động</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="googleTableBody">
+                @foreach (var google in Model.GoogleAccountList)
+                {
+                    <tr>
+                        <td><input type="checkbox" id="@google.Id" name="googleCheckboxes" value="@google.Id" /></td>
+                        <td>@google.Id</td>
+                        <td><img src="@google.Avatar" alt="Avatar" width="50" height="50" /></td>
+                        <td>@google.Email</td>
+                        <td>@google.Name</td>
+                        <td>@google.Status</td>
+                        <td>@google.FirstName</td>
+                        <td>@google.LastName</td>
+                        <td>@google.Code2FA</td>
+                        <td>@google.EmailPrimary</td>
+                        <td>@google.Status</td>
+                        <td>@google.FacebookGroupID</td>
+                        <td>@google.ProfileOrbitaID</td>
+                        <td>@google.Name</td>
+                        <td>@google.FirstName</td>
+                        <td>@google.LastName</td>
+                        <td>@google.Birthday</td>
+                        <td>@google.Phone</td>
+                        <td>@google.Note</td>
+                        <td><button id="@google.Id" onclick="buttonClicked(this.id)" class="btn btn-success px-4 raised d-flex gap-2"><i class="material-icons-outlined">account_circle</i>Mở</button></td>
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success">Sửa</a>
+                                <form asp-area="User" asp-controller="ProfileOrbita" asp-action="DeleteProfileOrbita" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@google.Id" />
+                                    <button type="submit" class="btn btn-outline-danger">Xoá</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

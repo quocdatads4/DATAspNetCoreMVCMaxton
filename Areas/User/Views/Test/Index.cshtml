@@ -1,0 +1,506 @@
+﻿@{
+    ViewBag.Title = "Tài khoản";
+    ViewBag.pTitle = "Thông tin tài khoản";
+    Layout = "~/Areas/User/Views/Shared/_Main.cshtml";
+}
+
+@section styles {
+    <link href="~/assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+    <style>
+        .custom-select {
+            position: relative;
+            display: inline-block;
+        }
+
+        .select-selected {
+            background-color: #0d6efd;
+            padding: 5px 5px 5px 5px;
+            border: #000000;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .select-items {
+            position: absolute;
+            background-color: #0f1535;
+            border: 1px solid #ddd;
+            width: 100%;
+            display: none;
+            z-index: 99;
+        }
+
+            .select-items div {
+                padding: 8px;
+                cursor: pointer;
+            }
+
+                .select-items div:hover {
+                    background-color: #0f1535;
+                }
+
+            .select-items img {
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+
+        td {
+            text-align: center; /* Căn giữa theo chiều ngang */
+            vertical-align: middle; /* Căn giữa theo chiều dọc */
+            padding: 10px; /* Khoảng cách giữa nội dung và biên của ô */
+        }
+    </style>
+}
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Bạn có chắc chắn muốn xóa hồ sơ này không?</p>
+        <button id="confirmDelete">Xác nhận</button>
+        <button id="cancelDelete">Hủy bỏ</button>
+    </div>
+
+</div>
+
+
+<div class="card">
+    <div class="card-body">
+        <ul class="nav nav-pills nav-pills-success mb-3" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" data-bs-toggle="pill" href="#profile" role="tab" aria-selected="false" tabindex="-1">
+                    <div class="d-flex align-items-center">
+                        <div class="tab-icon">
+                            <i class="bi bi-person-circle me-2 fs-6"></i>
+                        </div>
+                        <div class="tab-title">Hồ sơ</div>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#facebook" role="tab" aria-selected="false" tabindex="-1">
+                    <div class="d-flex align-items-center">
+                        <div class="tab-icon">
+                            <i class="bi bi-facebook me-2 fs-6"></i>
+                        </div>
+                        <div class="tab-title">Facebook</div>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#google" role="tab" aria-selected="true">
+                    <div class="d-flex align-items-center">
+                        <div class="tab-icon">
+                            <i class="bi bi-google me-2 fs-6"></i>
+                        </div>
+                        <div class="tab-title">Google</div>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" data-bs-toggle="pill" href="#hotmailoutlook" role="tab" aria-selected="true">
+                    <div class="d-flex align-items-center">
+                        <div class="tab-icon">
+                            <i class="bi bi-google me-2 fs-6"></i>
+                        </div>
+                        <div class="tab-title">Hotmail&Outlook</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade active show" id="profile" role="tabpanel">
+
+                <!-- Phần thẻ HTML để hiển thị thông báo -->
+                <div id="groupMessage" class="alert alert-info" style="display: none;"></div>
+                <h6 class="mb-0 text-uppercase">DANH SÁCH HỒ SƠ</h6>
+                <hr>
+
+                <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+                    <div class="ps-3">
+                        <button id="checkAllButton" onclick="checkAll()" type="button" class="btn btn-primary px-4 raised d-flex gap-2"><i class="material-icons-outlined">check_circle</i>Chọn tất cả</button>
+                    </div>
+                    <div class="ps-2">
+                        <button id="uncheckAllButton" onclick="uncheckAll()" type="button" class="btn btn-secondary raised d-flex"><i class="material-icons-outlined">radio_button_unchecked</i>Bỏ chọn</button>
+                    </div>
+                    <div class="ps-2">
+                        <button id="buttonAll" onclick="buttonAllClicked()" type="button" class="btn btn-success px-4 raised d-flex gap-2"><i class="material-icons-outlined">change_circle</i> Tự động chạy</button>
+                    </div>
+
+                    <div class="ps-4">
+                        <select name="SelectedProfileGroup" id="SelectedProfileGroup" class="form-select">
+
+                            @foreach (var group in Model.ProfileGroupSelectList)
+                            {
+                                <option value="@group.Value">@group.Text</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="ps-2">
+                        <a asp-area="User" asp-controller="ProfileGroup" asp-action="TableProfileGroup" class="btn btn-success px-4 raised d-flex gap-2">
+                            <i class="material-icons-outlined">diversity_3</i> Nhóm hồ sơ
+                        </a>
+                    </div>
+
+                    <div class="ps-2">
+                        <a asp-area="User" asp-controller="ProfileOrbita" asp-action="Create" class="btn btn-success px-4 raised d-flex gap-2"><i class="material-icons-outlined">change_circle</i> Thêm hồ sơ</a>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="hometable" class="table table-striped table-bordered" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Chọn</th>
+                                        <th>Profile ID</th>
+                                        <th>Profile Name</th>
+                                        <th>Trạng thái</th>
+                                        <th>Nhóm</th>
+                                        <th>Hành động</th>
+                                        <th>Cập nhật</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="profileOrbitaTableBody">
+                                    @foreach (var orbita in Model.ProfileOrbitasList)
+                                    {
+                                        <tr>
+                                            <td><input type="checkbox" id="@orbita.Id" name="orbitaCheckboxes" value="@orbita.Id" /></td>
+                                            <td>@orbita.Id</td>
+                                            <td>@orbita.ProfileName</td>
+                                            <td>@orbita.Status</td>
+                                            <td>
+                                                @{
+                                                    var selectOptions = new System.Text.StringBuilder();
+                                                    foreach (var group in Model.ProfileGroupSelectbyID)
+                                                    {
+                                                        var isSelected = group.Value.ToString() == orbita.ProfileGroupID.ToString() ? "selected='selected'" : "";
+                                                        selectOptions.AppendLine($"<option value='{group.Value}' {isSelected}>{group.Text}</option>");
+                                                    }
+                                                }
+                                                <select id="SelectedProfileGroupTable" class="form-select" onchange="EditProfileGroupOrbita(@orbita.Id, this.value )">
+                                                    @Html.Raw(selectOptions.ToString())
+                                                </select>
+                                            </td>
+                                            <td><button id="@orbita.Id" onclick="buttonClicked(this.id)" class="btn btn-success px-4 raised d-flex gap-2"><i class="material-icons-outlined">account_circle</i>Mở</button></td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a asp-area="User" asp-controller="ProfileOrbita" asp-action="EditProfileOrbita" asp-route-id="@orbita.Id" class="btn btn-outline-success">Sửa</a>
+                                                    <form asp-area="User" asp-controller="ProfileOrbita" asp-action="DeleteProfileOrbita" method="post" style="display:inline;">
+                                                        <input type="hidden" name="id" value="@orbita.Id" />
+                                                        <button type="submit" onclick="confirmDelete(@orbita.Id)" class="btn btn-danger">Xóa</button>
+
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Chọn</th>
+                                        <th>Profile ID</th>
+                                        <th>Profile Name</th>
+                                        <th>Trạng thái</th>
+                                        <th>Nhóm</th>
+                                        <th>Hành động</th>
+                                        <th>Cập nhật</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                @section scripts
+                {
+
+                    <!-- Thêm script vào phần view của bạn -->
+                    <script>
+                        // Hàm kiểm tra số lượng checkbox trong bảng
+                        function countCheckboxes() {
+                            var checkboxes = document.querySelectorAll('#profileOrbitaTableBody input[type="checkbox"]');
+                            return checkboxes.length;
+                        }
+
+                        // Hàm check tất cả các checkbox
+                        function checkAll() {
+                            var checkboxes = document.querySelectorAll('#profileOrbitaTableBody input[type="checkbox"]');
+                            checkboxes.forEach(function (checkbox) {
+                                checkbox.checked = true;
+                            });
+                        }
+                        // Hàm uncheck tất cả các checkbox
+                        function uncheckAll() {
+                            var checkboxes = document.querySelectorAll('#profileOrbitaTableBody input[type="checkbox"]');
+                            checkboxes.forEach(function (checkbox) {
+                                checkbox.checked = false;
+                            });
+                        }
+
+                        // Ví dụ: Sử dụng hàm countCheckboxes để hiển thị số lượng checkbox
+                        document.addEventListener('DOMContentLoaded', (event) => {
+                            console.log("Number of checkboxes in the table: " + countCheckboxes());
+                        });
+
+                        // Ví dụ: Add an event listener to a button to call checkAll()
+                        document.getElementById('checkAllButton').addEventListener('click', checkAll);
+
+                        // Ví dụ: Add an event listener to a button to call uncheckAll()
+                        document.getElementById('uncheckAllButton').addEventListener('click', uncheckAll);
+
+                        let lastButtonIdClicked;
+
+                        function buttonClicked(buttonId) {
+                            if (lastButtonIdClicked !== buttonId) {
+                                try {
+                                    // Cập nhật ID của nút cuối cùng đã được nhấn
+                                    lastButtonIdClicked = buttonId;
+
+                                    // Kiểm tra xem đối tượng window.chrome.webview có tồn tại và có phương thức postMessage hay không
+                                    if (window.chrome && window.chrome.webview && typeof window.chrome.webview.postMessage === 'function') {
+                                        // Gửi thông điệp qua window.chrome.webview.postMessage
+                                        window.chrome.webview.postMessage(buttonId);
+                                    } else {
+                                        // Nếu không tồn tại đối tượng hoặc phương thức cần thiết, thông báo lỗi
+                                        displayErrorMessage('window.chrome.webview.postMessage không khả dụng.');
+                                    }
+                                } catch (error) {
+                                    // Bắt và thông báo lỗi nếu có
+                                    displayErrorMessage('Có lỗi xảy ra khi gửi thông điệp: ' + error.message);
+                                }
+                            }
+                        }
+                        
+
+                        function displayErrorMessage(message) {
+                            var messageDiv = document.getElementById('groupMessage');
+                            if (messageDiv) {
+                                messageDiv.style.display = 'block'; // Hiển thị div nếu nó đang ẩn
+                                messageDiv.innerHTML = message; // Cập nhật nội dung thông báo lỗi
+                                messageDiv.className = 'alert alert-danger'; // Cập nhật class để hiển thị thông báo lỗi
+                            }
+                        }
+                    </script>
+
+
+
+                    <script>
+                        function confirmDelete(id) {
+                            if (confirm("Bạn có chắc chắn muốn xóa hồ sơ này không?")) {
+                                // Nếu người dùng xác nhận, gửi yêu cầu POST đến hàm DeleteProfileOrbita
+                                var form = document.createElement('form');
+                                form.method = 'post';
+                                form.action = '/User/ProfileOrbita/DeleteProfileOrbita';
+                                form.style.display = 'none';
+
+                                var input = document.createElement('input');
+                                input.type = 'hidden';
+                                input.name = 'id';
+                                input.value = id;
+                                form.appendChild(input);
+
+                                document.body.appendChild(form);
+                                form.submit();
+                            }
+                        }
+
+                    </script>
+                    <script>
+                        // Khi người dùng thay đổi giá trị của Dropdown
+                        document.getElementById('SelectedProfileGroup').addEventListener('change', function () {
+                            loadProfileOrbitasByGroup(); // Gọi hàm để lấy dữ liệu mới
+                        });
+
+                        function loadProfileOrbitasByGroup() {
+                            var selectedGroupId = document.getElementById('SelectedProfileGroup').value;
+                            var messageDiv = document.getElementById('groupMessage'); // Lấy thẻ để hiển thị thông báo
+
+                            // Hiển thị thông báo ID nhóm đã chọn
+                            messageDiv.style.display = 'block'; // Hiển thị thẻ thông báo
+                            messageDiv.className = 'alert alert-info'; // Thiết lập class thông báo
+
+                            // Kiểm tra xem người dùng đã chọn nhóm chưa
+                            if (!selectedGroupId || selectedGroupId === "0") {
+                                messageDiv.innerHTML = 'Vui lòng chọn một nhóm hợp lệ.'; // Cập nhật thông báo
+                                return; // Không gửi yêu cầu AJAX nếu chưa chọn nhóm
+                            }
+
+                            // Cập nhật thông báo với ID nhóm đã chọn
+                            messageDiv.innerHTML = 'Người dùng đã chọn nhóm có ID: ' + selectedGroupId;
+                            // Gửi yêu cầu AJAX đến server để lấy danh sách ProfileOrbita theo nhóm
+                            $.ajax({
+                                url: '@Url.Action("GetProfileOrbitasByGroup", "ProfileOrbita", new { area = "User" })', // Đảm bảo đúng area nếu có
+                                type: 'GET',
+                                data: { profileGroupId: selectedGroupId }, // Gửi ID nhóm lên server
+
+                                success: function (result) {
+                                    // Tìm phần table để hiển thị dữ liệu
+                                    var table = document.getElementById('hometable');
+                                    table.innerHTML = ''; // Xóa nội dung hiện tại của bảng
+
+                                    // Xây dựng tiêu đề của bảng
+                                    var tableContent = `
+                                            <thead>
+                                                <tr>
+                                                    <th>Chọn</th>
+                                                    <th>ID</th>
+                                                    <th>Profile Name</th>
+                                                    <th>Status</th>
+                                                    <th>Profile Group ID</th>
+                                                    <th>Action</th>
+                                                    <th>Operations</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>`;
+
+                                    // Lấy dữ liệu của nhóm ProfileGroup từ server
+                                    $.ajax({
+                                        url: '@Url.Action("GetProfileGroupList", "ProfileGroup", new { area = "User" })', // Endpoint để lấy dữ liệu các nhóm
+                                        type: 'GET',
+                                        success: function (groups) {
+                                            // Chắc chắn `groups` là mảng trước khi sử dụng .map
+                                            if (!Array.isArray(groups)) {
+                                                console.error("Dữ liệu trả về không phải là mảng:", groups);
+                                                alert("Có lỗi xảy ra khi tải dữ liệu nhóm.");
+                                                return;
+                                            }
+
+                                            // Kiểm tra xem kết quả có dữ liệu không
+                                            if (result && result.length > 0) {
+                                                // Duyệt qua danh sách kết quả và thêm dữ liệu vào bảng
+                                                result.forEach(function (orbita) {
+                                                    // Hiển thị thông báo cho mỗi mục
+                                                    messageDiv.innerHTML = 'Đang xử lý mục: ' + JSON.stringify(orbita);
+
+                                                    // Xây dựng danh sách tùy chọn cho phần tử <select>
+                                                    var selectOptions = groups.map(function (group) {
+                                                        var isSelected = (group.id === orbita.profileGroupID) ? 'selected' : '';
+                                                        return `<option value="${group.id}" ${isSelected}>${group.name}</option>`;
+                                                    }).join('');
+
+                                                    // Xuất thông báo
+                                                    var additionalMessage = document.createElement('div');
+                                                    additionalMessage.innerHTML = 'Select Options: ' + selectOptions;
+                                                    messageDiv.appendChild(additionalMessage);
+
+                                                    var row = `
+                                                            <tr>
+                                                                <td><input type="checkbox" id="${orbita.id}" name="orbitaCheckboxes" value="${orbita.id}" /></td>
+                                                                <td>${orbita.id}</td>
+                                                                <td>${orbita.profileName}</td>
+                                                                <td>${orbita.status}</td>
+                                                                <td><select id="SelectedProfileGroup2" class="form-control" onchange="EditProfileGroupOrbita(${orbita.id}, this.value)">${selectOptions}</select></td>
+                                                                <td>
+                                                                    <button id="${orbita.id}" onclick="buttonClicked(this.id)" class="btn btn-success px-4 raised d-flex gap-2">
+                                                                        <i class="material-icons-outlined">account_circle</i>Mở
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="btn-group">
+                                                                        <a asp-area="User" asp-controller="ProfileOrbita" asp-action="EditProfileOrbita" asp-route-id="${orbita.id}" class="btn btn-outline-success">Sửa</a>
+                                                                        <form asp-area="User" asp-controller="ProfileOrbita" asp-action="DeleteProfileOrbita" method="post" style="display:inline;">
+                                                                            <input type="hidden" name="id" value="${orbita.id}" />
+                                                                            <button type="submit" class="btn btn-outline-danger">Xoá</button>
+                                                                        </form>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>`;
+                                                    tableContent += row; // Thêm dòng vào bảng
+                                                });
+                                                tableContent += `</tbody>`;
+                                                table.innerHTML = tableContent; // Cập nhật nội dung của bảng
+                                            } else {
+                                                // Nếu không có dữ liệu, hiển thị thông báo
+                                                table.innerHTML = '<tr><td colspan="9" class="text-center">Không có dữ liệu</td></tr>';
+                                            }
+                                        },
+                                        error: function (error) {
+                                            // In lỗi ra console nếu xảy ra lỗi trong quá trình gọi AJAX
+                                            console.error("Lỗi khi tải dữ liệu nhóm:", error);
+                                            alert("Có lỗi xảy ra khi tải dữ liệu nhóm.");
+                                        }
+                                    });
+                                },
+                                error: function (error) {
+                                    // In lỗi ra console nếu xảy ra lỗi trong quá trình gọi AJAX
+                                    console.error("Lỗi khi tải dữ liệu:", error);
+                                    alert("Có lỗi xảy ra khi tải dữ liệu.");
+                                }
+                            });
+                        }
+                        //End hàm table đưa dữ liệu vào table.
+                        function EditProfileGroupOrbita(orbitaId, newProfileGroupId) {
+                            // Tạo đối tượng model
+                            var model = {
+                                IdProfileOrbitaTable: orbitaId,
+                                ProfileGroupIDTable: newProfileGroupId
+                            };
+
+                            // Lấy thẻ để hiển thị thông báo
+                            var messageDiv = document.getElementById('groupMessage');
+                            messageDiv.style.display = 'block'; // Hiển thị thẻ thông báo
+                            messageDiv.className = 'alert alert-info'; // Thiết lập class thông báo
+                            messageDiv.innerHTML = 'Thông tin cập nhật đang được xử lý: ' + JSON.stringify(model); // Cập nhật nội dung thông báo
+
+                            // Gửi yêu cầu AJAX tới action EditProfileOrbita
+                            $.ajax({
+                                url: '/User/ProfileOrbita/EditProfileGroupOrbitaTable', // Cập nhật URL của action
+                                type: 'POST',
+                                data: JSON.stringify(model),
+                                contentType: 'application/json; charset=utf-8',
+                                success: function (result) {
+                                    if (result) {
+                                        messageDiv.className = 'alert alert-success'; // Thiết lập class thông báo thành công
+                                        messageDiv.innerHTML += '<br/>Profile Orbita đã được cập nhật thành công.';
+                                    } else {
+                                        messageDiv.className = 'alert alert-danger'; // Thiết lập class thông báo lỗi
+                                        messageDiv.innerHTML += '<br/>Có lỗi xảy ra khi cập nhật Profile Orbita.';
+                                    }
+                                },
+                                error: function (error) {
+                                    console.error("Lỗi khi cập nhật Profile Orbita:", error);
+                                    messageDiv.className = 'alert alert-danger'; // Thiết lập class thông báo lỗi
+                                    messageDiv.innerHTML += '<br/>Có lỗi xảy ra khi cập nhật Profile Orbita.';
+                                }
+                            });
+                        }
+
+                    </script>
+
+
+
+
+
+
+
+
+
+                }
+
+                @* Kết thúc hàm DIV *@
+            </div>
+
+
+
+
+
+
+
+            <div class="tab-pane fade" id="facebook" role="tabpanel">
+                <p>@await Html.PartialAsync("~/Areas/User/Views/FacebookAccount/_TableFacebookAccount.cshtml")</p>
+            </div>
+            <div class="tab-pane fade" id="google" role="tabpanel">
+                <p>@await Html.PartialAsync("~/Areas/User/Views/GoogleAccount/_TableGoogleAccount.cshtml")</p>
+            </div>
+            <div class="tab-pane fade" id="hotmailoutlook" role="tabpanel">
+                <p>@await Html.PartialAsync("~/Areas/User/Views/HotmailOutlook/_TableHotmailOutlook.cshtml")</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

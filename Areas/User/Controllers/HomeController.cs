@@ -13,74 +13,120 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Controllers
         private readonly ILogger<HomeController> _logger;
 
         private readonly IProfileGroupService _profileGroupService; // Assuming you have a service for handling profile groups
-        private readonly IProfileOrbitasBLL _profileOrbitaService; // Assuming you have a service for handling profile orbitas
+        private readonly IProfileOrbitasService _profileOrbitaService; // Assuming you have a service for handling profile orbitas
         private readonly IFacebookAccountService _facebookAccountService;
+        private readonly IGoogleAccountService _googleAccountService;
+        private readonly IHotmailOutlookService _hotmailOutlookService;
         public HomeController(ILogger<HomeController> logger, 
-            IProfileGroupService profileGroupService, 
-            IProfileOrbitasBLL profileOrbitaService, 
-            IFacebookAccountService facebookAccountService)
+            IProfileGroupService profileGroupService,
+            IProfileOrbitasService profileOrbitaService, 
+            IFacebookAccountService facebookAccountService,
+            IGoogleAccountService googleAccountService,
+            IHotmailOutlookService hotmailOutlookService)
         {
             _logger = logger;
             _profileGroupService = profileGroupService;
             _profileOrbitaService = profileOrbitaService;
             _facebookAccountService = facebookAccountService;
+            _googleAccountService = googleAccountService;
+            _hotmailOutlookService = hotmailOutlookService;
         }
 
 		public async Task<IActionResult> Index()
 		{
-            var model = new _UserMainDTO
-            {
-                ProfileGroupSelectList = await _profileGroupService.CreateProfileGroupSelectListAsync(),
-                ProfileOrbitasList = await _profileOrbitaService.GetAll_ProfileOrbita_List(),
-            };
+            var model = new _UserMainDTO();  // Khởi tạo object
 
-			return View(model);
-		}
-
-        // Action để lấy danh sách ProfileOrbita theo ProfileGroupId
-        [HttpGet]
-        public async Task<IActionResult> GetProfileOrbitasByGroup(int profileGroupId)
-        {
-            if (profileGroupId == 0) // Kiểm tra nếu ID nhóm không hợp lệ
+            // Kiểm tra và xử lý từng service
+            if (_profileGroupService != null)
             {
-                return Json(new List<ProfileOrbitaDTO>()); // Trả về danh sách trống
+                try
+                {
+                    model.ProfileGroupSelectList = await _profileGroupService.CreateProfileGroupSelectListAsync();
+                    model.ProfileGroupSelectbyID = await _profileGroupService.CreateProfileGroupSelectListAsync();
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("ProfileGroupSelectList", "Không thể tải danh sách nhóm hồ sơ");
+                    Console.WriteLine($"Error loading ProfileGroupSelectList: {ex.Message}");
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("ProfileGroupService", "Service không khả dụng");
             }
 
-            // Gọi hàm từ BLL để lấy danh sách ProfileOrbita theo nhóm
-            var profileOrbitas = await _profileOrbitaService.GetProfileOrbitasByGroupAsync(profileGroupId);
-            return Json(profileOrbitas); // Trả về dữ liệu dưới dạng JSON
-        }
-        // Action để lấy danh sách Facebook Account
-        [HttpGet]
-        public async Task<IActionResult> GetFacebookAccountList()
-        {
-
-            // Gọi hàm từ BLL để lấy danh sách Facebook Account
-            var facebookAccount = await _facebookAccountService.GetAllFacebookAccountList();
-            return Json(facebookAccount); // Trả về dữ liệu dưới dạng JSON
-        }
-        // Action để lấy danh sách Facebook Account
-        [HttpGet]
-        public async Task<IActionResult> GetProfileGroupList()
-        {
-
-            // Gọi hàm từ BLL để lấy danh sách Facebook Account
-            var profileGroup = await _profileGroupService.GetProfileGroupsAsync();
-            return Json(profileGroup); // Trả về dữ liệu dưới dạng JSON
-        }
-        [HttpPost]
-        [HttpPost]
-        public async Task<IActionResult> EditProfileOrbita([FromBody] _UserMainDTO model)
-        {
-            if (ModelState.IsValid)
+            if (_profileOrbitaService != null)
             {
-                var result = await _profileOrbitaService.EditProfileOrbitaAsyncTable(model);
-                if (result)
-                    return Ok(true); // Trả về HTTP 200 cùng với dữ liệu thành công
-                return NotFound();
+                try
+                {
+                    model.ProfileOrbitasList = await _profileOrbitaService.GetAllProfileOrbitaList();
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("ProfileOrbitasList", "Không thể tải danh sách Profile Orbita");
+                    Console.WriteLine($"Error loading ProfileOrbitasList: {ex.Message}");
+                }
             }
-            return BadRequest(ModelState);
+            else
+            {
+                ModelState.AddModelError("ProfileOrbitaService", "Service không khả dụng");
+            }
+
+            if (_facebookAccountService != null)
+            {
+                try
+                {
+                    model.FacebookAccountList = await _facebookAccountService.GetAllFacebookAccountAsync();
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("FacebookAccountList", "Không thể tải danh sách tài khoản Facebook");
+                    Console.WriteLine($"Error loading FacebookAccountList: {ex.Message}");
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("FacebookAccountService", "Service không khả dụng");
+            }
+
+            if (_googleAccountService != null)
+            {
+                try
+                {
+           
+                    model.GoogleAccountList = await _googleAccountService.GetAllGoogleAccountAsync();
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("GoogleAccountList", "Không thể tải danh sách tài khoản Google");
+                    Console.WriteLine($"Error loading GoogleAccountList: {ex.Message}");
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("GoogleAccountService", "Service không khả dụng");
+            }
+            if (_hotmailOutlookService != null)
+            {
+                try
+                {
+
+                    model.HotmailOutlookList = await _hotmailOutlookService.GetAllHotmailOutlookAccountAsync();
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("HotmailOutlookList", "Không thể tải danh sách tài khoản Google");
+                    Console.WriteLine($"Error loading HotmailOutlookList: {ex.Message}");
+                }
+            }
+            else
+            {
+                ModelState.AddModelError("HotmailOutlookService", "Service không khả dụng");
+            }
+            return View(model);
         }
+
+       
         public IActionResult Privacy()
         {
             return View();

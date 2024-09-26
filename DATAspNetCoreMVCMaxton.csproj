@@ -28,7 +28,10 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\User\Views\FacebookAccount\" />
+    <Folder Include="Areas\User\Views\GoogleAccount\" />
     <Folder Include="BusinessLogic\" />
+    <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 
   <ItemGroup>

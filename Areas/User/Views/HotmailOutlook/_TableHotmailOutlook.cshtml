@@ -1,0 +1,67 @@
+﻿@model DATAspNetCoreMVCMaxton.Areas.User.Models._UserMainDTO
+
+<div class="card-body">
+    <div class="table-responsive">
+        <table id="hometablegoogle" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Chọn</th>
+                    <th>Id</th>
+                    <th>Avatar</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>AppPassword</th>
+                    <th>BackupCode</th>
+                    <th>Code2FA</th>
+                    <th>EmailPrimaryID</th>
+                    <th>Status</th>
+                    <th>ProfileOrbitaID</th>
+                    <th>Name</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Language</th>
+                    <th>Birthday</th>
+                    <th>Sex</th>
+                    <th>Phone</th>
+                    <th>Hành động</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="hotmailoutlookTableBody">
+                @foreach (var hotmailoutlook in Model.HotmailOutlookList)
+                {
+                    <tr>
+                        <td><input type="checkbox" id="@hotmailoutlook.Id" name="hotmailoutlookCheckboxes" value="@hotmailoutlook.Id" /></td>
+                        <td>@hotmailoutlook.Id</td>
+                        <td><img src="@hotmailoutlook.Avatar" alt="Avatar" width="50" height="50" /></td>
+                        <td>@hotmailoutlook.Email</td>
+                        <td>@hotmailoutlook.Password</td>
+                        <td>@hotmailoutlook.AppPassword</td>
+                        <td>@hotmailoutlook.BackupCode</td>
+                        <td>@hotmailoutlook.Code2FA</td>
+                        <td>@hotmailoutlook.EmailPrimaryID</td>
+                        <td>@hotmailoutlook.Status</td>
+                        <td>@hotmailoutlook.ProfileOrbitaID</td>
+                        <td>@hotmailoutlook.Name</td>
+                        <td>@hotmailoutlook.FirstName</td>
+                        <td>@hotmailoutlook.LastName</td>
+                        <td>@hotmailoutlook.Language</td>
+                        <td>@hotmailoutlook.Birthday</td>
+                        <td>@hotmailoutlook.Sex</td>
+                        <td>@hotmailoutlook.Phone</td>
+                        <td><button id="@hotmailoutlook.Id" onclick="buttonClicked(this.id)" class="btn btn-success px-4 raised d-flex gap-2"><i class="material-icons-outlined">account_circle</i>Mở</button></td>
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success">Sửa</a>
+                                <form asp-area="User" asp-controller="ProfileOrbita" asp-action="DeleteProfileOrbita" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@hotmailoutlook.Id" />
+                                    <button type="submit" class="btn btn-outline-danger">Xoá</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

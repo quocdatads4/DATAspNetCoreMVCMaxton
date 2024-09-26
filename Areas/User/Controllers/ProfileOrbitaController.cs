@@ -11,89 +11,69 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Controllers
     [Area("User")]
     public class ProfileOrbitaController : Controller
     {
-        private readonly IProfileOrbitasBLL _profileOrbitaService;
-        private readonly IProfileGroupService _profileGroupService; // Assuming you have a service for handling profile groups
-        public ProfileOrbitaController(IProfileOrbitasBLL profileOrbitaService, IProfileGroupService profileGroupService)
+        private readonly IProfileOrbitasService _profileOrbitaService;
+        private readonly IProfileGroupService _profileGroupService;
+        public ProfileOrbitaController(IProfileOrbitasService profileOrbitaService, IProfileGroupService profileGroupService)
         {
             _profileOrbitaService = profileOrbitaService;
             _profileGroupService = profileGroupService;
 
         }
-
+        // Action để lấy danh sách ProfileOrbita theo ProfileGroupId
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> GetProfileOrbitasByGroup(int profileGroupId)
         {
-            var profileOrbitaList = await _profileOrbitaService.GetAll_ProfileOrbita_List();
-            return View(profileOrbitaList);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Details(int id)
-        {
-            var profileOrbita = await _profileOrbitaService.GetProfileOrbitaByIdAsync(id);
-            if (profileOrbita == null) return NotFound();
-
-            return View(profileOrbita);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Create()
-        {
-            var profileGroups = await _profileGroupService.GetProfileGroupsAsync();
-            var model = new _UserMainDTO
+            if (profileGroupId == 0) // Kiểm tra nếu ID nhóm không hợp lệ
             {
-                ProfileGroupSelectList = profileGroups.Select(pg => new SelectListItem
-                {
-                    Value = pg.Id.ToString(),
-                    Text = pg.Name
-                }).ToList(),
-            };
+                return Json(new List<ProfileOrbitaDTO>()); // Trả về danh sách trống
+            }
 
-            return View(model);
+            // Gọi hàm từ BLL để lấy danh sách ProfileOrbita theo nhóm
+            var profileOrbitas = await _profileOrbitaService.GetProfileOrbitasByGroupAsync(profileGroupId);
+            return Json(profileOrbitas); // Trả về dữ liệu dưới dạng JSON
         }
-		public async Task<IActionResult> GetProfilesByGroup(int profileGroupId)
-		{
-			var profileOrbitas = await _profileOrbitaService.GetProfileOrbitasByGroupAsync(profileGroupId);
-			return Json(profileOrbitas);
-		}
-		[HttpPost]
-        public async Task<IActionResult> Create(ProfileOrbitaDTO profileOrbita)
+        [HttpPost]
+        public async Task<IActionResult> EditProfileGroupOrbitaTable([FromBody] _UserMainDTO model)
         {
             if (ModelState.IsValid)
             {
-                await _profileOrbitaService.AddProfileOrbitaAsync(profileOrbita);
-                return RedirectToAction(nameof(Index));
+                var result = await _profileOrbitaService.EditProfileOrbitaAsyncTable(model);
+                if (result)
+                    return Ok(true); // Trả về HTTP 200 cùng với dữ liệu thành công
+                return NotFound();
             }
-            return View(profileOrbita);
+            return BadRequest(ModelState);
         }
-
-
-
         [HttpGet]
         public async Task<IActionResult> EditProfileOrbita(int id)
         {
-            var profileGroupSelectList = await _profileGroupService.CreateProfileGroupSelectListAsync();
-            var profileOrbitas = await _profileOrbitaService.GetProfileOrbitaForEditAsync(id);
+            // Get the ProfileOrbita data for editing
+            var profileOrbita = await _profileOrbitaService.GetProfileOrbitaForEditAsync(id);
+            if (profileOrbita == null)
+            {
+                // If no ProfileOrbita found with the given id, return NotFound (HTTP 404)
+                return NotFound();
+            }
 
+            // Prepare the model for the View
             var model = new _UserMainDTO
             {
-                ProfileGroupSelectList = profileGroupSelectList,
-                ProfileOrbitas = profileOrbitas.ProfileOrbitas
+                ProfileGroupSelectList = await _profileGroupService.CreateProfileGroupSelectListAsync(),
+                ProfileOrbita = profileOrbita.ProfileOrbita
             };
 
+            // Return the View with the model
             return View(model);
         }
-
         [HttpPost]
         public async Task<IActionResult> EditProfileOrbita(_UserMainDTO model)
         {
             if (ModelState.IsValid)
             {
-                var result = await _profileOrbitaService.EditProfileOrbitaAsync(model);
-                if (result) return RedirectToAction(nameof(Index), "Home", new { area = "User" });
-                return NotFound();
+                await _profileOrbitaService.EditProfileOrbitaAsync(model);
+                return RedirectToAction(nameof(Index), "Home", new { area = "User" });
             }
-            return View(new _UserMainDTO { ProfileGroup = model.ProfileGroup });
+            return View("ProfileOrbita", new _UserMainDTO { ProfileGroup = model.ProfileGroup });
         }
         [HttpPost]
         public async Task<IActionResult> DeleteProfileOrbita(int id)
@@ -101,14 +81,15 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Controllers
             var result = await _profileOrbitaService.DeleteProfileOrbitaAsync(id);
             if (result)
             {
-                // Profile group deleted successfully
+                TempData["SuccessMessage"] = "Hồ sơ đã được xóa thành công.";
             }
             else
             {
-                // Profile group not found or could not be deleted
+                TempData["ErrorMessage"] = "Không tìm thấy hồ sơ hoặc không thể xóa hồ sơ.";
             }
 
             return RedirectToAction(nameof(Index), "Home", new { area = "User" });
         }
+
     }
 }

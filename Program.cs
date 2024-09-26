@@ -22,7 +22,7 @@ builder.Services.AddScoped<IProfileGroupRepository, ProfileGroupRepository>();
 builder.Services.AddScoped<IProfileGroupService, ProfileGroupService>();
 // Register repositories và services
 builder.Services.AddScoped<IProfileOrbitasRepository, ProfileOrbitaRepository>();
-builder.Services.AddScoped<IProfileOrbitasBLL, ProfileOrbitaService>();
+builder.Services.AddScoped<IProfileOrbitasService, ProfileOrbitaService>();
 
 // Register repositories và services
 builder.Services.AddScoped<IUserAccountRepository, UserAccountRepository>();
@@ -32,9 +32,18 @@ builder.Services.AddScoped<IUserAccountService, UserAccountService>();
 builder.Services.AddScoped<IFacebookAccountRepository, FacebookAccountRepository>();
 builder.Services.AddScoped<IFacebookAccountService, FacebookAccountService>();
 
+// Register repositories và services
+builder.Services.AddScoped<IGoogleAccountRepository, GoogleAccountRepository>();
+builder.Services.AddScoped<IGoogleAccountService, GoogleAccountService>();
+
+// Register repositories và services
+builder.Services.AddScoped<IHotmailOutlookRepository, HotmailOutlookRepository>();
+builder.Services.AddScoped<IHotmailOutlookService, HotmailOutlookService>();
+
+
 var app = builder.Build();
 
-builder.Services.AddEndpointsApiExplorer();
+//builder.Services.AddEndpointsApiExplorer();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

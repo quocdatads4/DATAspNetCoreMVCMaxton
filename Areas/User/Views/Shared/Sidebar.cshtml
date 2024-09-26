@@ -17,20 +17,15 @@
     <div class="sidebar-nav">
         <!--navigation-->
         <ul class="metismenu" id="sidenav">
-            <li>
-                <a asp-area="User" asp-controller="Home" asp-action="Index" class="has-arrow">
-                    <div class="parent-icon">
-                        <i class="material-icons-outlined">home</i>
-                    </div>
-                    <div class="menu-title">Bảng điều khiển</div>
+            <li class="mm-active">
+                <a asp-area="User" asp-controller="Home" asp-action="Index">
+                    <div class="parent-icon"><i class="material-icons-outlined">home</i></div>
+                    <div class="menu-title has-arrow " aria-expanded="true">Bảng điều khiển</div>
                 </a>
-                
             </li>
             <li>
                 <a href="javascrpt:;">
-                    <div class="parent-icon">
-                        <i class="material-icons-outlined">add_circle</i>
-                    </div>
+                    <div class="parent-icon"><i class="material-icons-outlined">add_circle</i></div>
                     <div class="menu-title">Tự động hoá</div>
                 </a>
             </li>
@@ -104,6 +99,43 @@
         </ul>
         <!--end navigation-->
     </div>
+    <div class="card rounded-4">
+        <div class="card-body">
+            <div class="d-flex align-items-start gap-3 border p-3 rounded">
+                <div class="detail-icon fs-5">
+                    <i class="material-icons-outlined">library_add</i>
+                </div>
+                <div class="detail-info">
+                    <p class="fw-bold mb-1">Số dư chính</p>
+                    <a href="javascript:;" class="mb-0">0 VND</a>
+                </div>
+            </div>
 
+            <br />
+            <div class="d-flex align-items-start gap-3 border p-3 rounded">
+                <div class="detail-icon fs-5">
+                    <i class="material-icons-outlined">paid</i>
+                </div>
+
+                <div class="detail-info">
+                    <h6 class="mb-0">Gói đang dùng</h6>
+                    <a href="javascript:;" class="mb-0">Free</a>
+                </div>
+            </div>
+            <br />
+            <div class="d-flex align-items-start gap-3 border p-3 rounded">
+                <div class="detail-icon fs-5">
+                    <i class="material-icons-outlined">person</i>
+                </div>
+
+                <div class="detail-info">
+                    <h6 class="mb-0">Hồ sơ hiện có</h6>
+                    <a href="javascript:;" class="mb-0">Hồ sơ</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </aside>
 <!--end sidebar-->
+

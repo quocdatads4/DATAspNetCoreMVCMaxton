@@ -1,0 +1,80 @@
+﻿@model DATAspNetCoreMVCMaxton.Areas.User.Models._UserMainDTO
+
+
+
+
+<div class="card-body">
+    <div class="table-responsive">
+        <table id="hometablefacebook" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectall" /></th>
+                    <th>ID</th>
+                    <th>Avatar</th>
+                    <th>UID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Code2FA</th>
+                    <th>Cookie</th>
+                    <th>Token</th>
+                    <th>EmailPrimaryID</th>
+                    <th>Language</th>
+                    <th>Birthday</th>
+                    <th>Giới tính</th>
+                    <th>Phone</th>
+                    <th>Note</th>
+                    <th>University</th>
+                    <th>Location</th>
+                    <th>HomeTown</th>
+                    <th>FWork</th>
+                    <th>Friends</th>
+                    <th>Groups</th>
+                    <th>Hành động</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="facebookTableBody">
+                @foreach (var facebook in Model.FacebookAccountList)
+                {
+                    <tr>
+                        <td><input type="checkbox" id="@facebook.Id" name="orbitaCheckboxes" value="@facebook.Id" /></td>
+                        <td>@facebook.Id</td>
+                        <td><img src="@facebook.Avatar" alt="Avatar" width="50" height="50" /></td>
+                        <td>@facebook.UId</td>
+                        <td>@facebook.Name</td>
+                        <td>@facebook.Status</td>
+                        <td>@facebook.FirstName</td>
+                        <td>@facebook.LastName</td>
+                        <td>@facebook.Code2FA</td>
+                        <td>@facebook.Cookie</td>
+                        <td>@facebook.Token</td>
+                        <td>@facebook.EmailPrimaryID</td>
+                        <td>@facebook.Language</td>
+                        <td>@facebook.Birthday</td>
+                        <td>@facebook.Sex</td>
+                        <td>@facebook.Phone</td>
+                        <td>@facebook.Note</td>
+                        <td>@facebook.University</td>
+                        <td>@facebook.Location</td>
+                        <td>@facebook.HomeTown</td>
+                        <td>@facebook.FWork</td>
+                        <td>@facebook.Friends</td>
+                        <td>@facebook.Groups</td>
+                        <td><button id="@facebook.Id" onclick="buttonClicked(this.id)" class="btn btn-success px-4 raised d-flex gap-2"><i class="material-icons-outlined">account_circle</i>Mở</button></td>
+                        <td>
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success">Sửa</a>
+                                <form asp-area="User" asp-controller="ProfileOrbita" asp-action="DeleteProfileOrbita" method="post" style="display:inline;">
+                                    <input type="hidden" name="id" value="@facebook.Id" />
+                                    <button type="submit" class="btn btn-outline-danger">Xoá</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

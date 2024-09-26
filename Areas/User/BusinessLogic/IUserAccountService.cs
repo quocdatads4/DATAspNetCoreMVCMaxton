@@ -1,5 +1,6 @@
 ﻿using DATAspNetCoreMVCMaxton.Areas.User.Data;
 using DATAspNetCoreMVCMaxton.Areas.User.Models;
+using NuGet.Protocol.Core.Types;
 
 namespace DATAspNetCoreMVCMaxton.Areas.User.BusinessLogic
 {
@@ -7,7 +8,7 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.BusinessLogic
     public interface IUserAccountService
     {
         Task<UserAccountDTO> GetUserAccountByIdAsync(int id);
-        Task UpdateUserAccountAsync(UserAccountDTO userAccount); // Add this method
+        Task UpdateUserAccountAsync(UserAccountDTO userAccount);
     }
     public class UserAccountService : IUserAccountService
     {

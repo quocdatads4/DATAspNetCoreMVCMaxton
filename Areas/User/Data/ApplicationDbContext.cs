@@ -15,6 +15,7 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
         public DbSet<FacebookAccountDTO> AspNetFacebookAccount { get; set; }
 
         public DbSet<GoogleAccountDTO> AspNetGoogleAccount { get; set; }
+        public DbSet<HotmailOutlookDTO> AspNetHotmailOutlook { get; set; }
 
         public DbSet<SocialSelectDTO> AspNetSocial { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

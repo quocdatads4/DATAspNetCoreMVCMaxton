@@ -8,8 +8,8 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // This attribute makes Id auto-increment
         public int Id { get; set; }
+        public string? Avatar { get; set; }
         public string? UId { get; set; }
-
         public string? Password { get; set; }
         public string? Name { get; set; }
         public int ProfileOrbitaID { get; set; }
@@ -17,7 +17,6 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Models
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public string? Code2FA { get; set; }
-
         public string? Cookie { get; set; }
         public string? Token { get; set; }
         public string? EmailPrimaryID { get; set; }
@@ -31,5 +30,6 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Models
         public string? HomeTown { get; set; }
         public string? FWork { get; set; }
         public string? Friends { get; set; }
+        public string? Groups { get; set; }
     }
 }

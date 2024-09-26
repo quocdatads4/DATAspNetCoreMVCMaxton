@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DATAspNetCoreMVCMaxton
 build_property.RootNamespace = DATAspNetCoreMVCMaxton
@@ -18,12 +26,132 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\DATSoftware\DATAspNetCoreMVCMaxton
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Auth/Basiclogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxCYXNpY2xvZ2luLmNzaHRtbA==
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Home/Dashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/Admin/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/FacebookAccount/_TableFacebookAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xGYWNlYm9va0FjY291bnRcX1RhYmxlRmFjZWJvb2tBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/GoogleAccount/_TableGoogleAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xHb29nbGVBY2NvdW50XF9UYWJsZUdvb2dsZUFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Home/DashboardReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXERhc2hib2FyZFJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Home/_HomeTabPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXF9Ib21lVGFiUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/HotmailOutlook/_TableHotmailOutlook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb3RtYWlsT3V0bG9va1xfVGFibGVIb3RtYWlsT3V0bG9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/ProfileGroup/EditProfileGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9maWxlR3JvdXBcRWRpdFByb2ZpbGVHcm91cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/ProfileGroup/ProfileGroupList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9maWxlR3JvdXBcUHJvZmlsZUdyb3VwTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/ProfileGroup/TableProfileGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9maWxlR3JvdXBcVGFibGVQcm9maWxlR3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/ProfileOrbita/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9maWxlT3JiaXRhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/ProfileOrbita/EditProfileOrbita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xQcm9maWxlT3JiaXRhXEVkaXRQcm9maWxlT3JiaXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Css.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcQ3NzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcRm9vdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Page_Title.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcUGFnZV9UaXRsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Right_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcUmlnaHRfU2lkZWJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcU2lkZWJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Title_Meta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcVGl0bGVfTWV0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Topbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcVG9wYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/Vendor_Scripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcVmVuZG9yX1NjcmlwdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/_Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX0F1dGguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/_Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX01haW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xUZXN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/UpdateSoftware/TimelineSoft.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVcGRhdGVTb2Z0d2FyZVxUaW1lbGluZVNvZnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/UserAccount/BasicUserAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyQWNjb3VudFxCYXNpY1VzZXJBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/UserAccount/SecurityUserAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xVc2VyQWNjb3VudFxTZWN1cml0eVVzZXJBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Areas/User/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Auth/Basiclogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxCYXNpY2xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Home/Index.cshtml]
@@ -38,76 +166,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcU2V0dGluZ3NJbmRleFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Cart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENhcnQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Css.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENzcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Page_Title.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhZ2VfVGl0bGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/ProfileGroupList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2ZpbGVHcm91cExpc3QuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Right_Sidebar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJpZ2h0X1NpZGViYXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Sidebar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGViYXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Title_Meta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRpdGxlX01ldGEuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Topbar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcGJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/Vendor_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFZlbmRvcl9TY3JpcHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/_Auth.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/_HomePage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib21lUGFnZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/TableData/TableData.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVEYXRhXFRhYmxlRGF0YS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/UpdateSoftware/TimelineSoft.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXBkYXRlU29mdHdhcmVcVGltZWxpbmVTb2Z0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/UserAccount/BasicUserAccount.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRcQmFzaWNVc2VyQWNjb3VudC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/UserAccount/SecurityUserAccount.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFjY291bnRcU2VjdXJpdHlVc2VyQWNjb3VudC5jc2h0bWw=
+[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/_Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/_ViewImports.cshtml]
@@ -117,7 +193,3 @@ build_metadata.AdditionalFiles.CssScope =
 [E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[E:/DATSoftware/DATAspNetCoreMVCMaxton/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-9aou9hzkuz

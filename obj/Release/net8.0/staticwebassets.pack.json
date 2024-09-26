@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\DATAspNetCoreMVCMaxton.bundle.scp.css",
-      "PackagePath": "staticwebassets\\DATAspNetCoreMVCMaxton.bundle.scp.css"
-    },
-    {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\css\\bootstrap-extended.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap-extended.css"
     },
@@ -19,6 +15,10 @@
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\css\\extra-icons.css",
       "PackagePath": "staticwebassets\\assets\\css\\extra-icons.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\css\\horizontal-menu.css",
+      "PackagePath": "staticwebassets\\assets\\css\\horizontal-menu.css"
     },
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\css\\pace.min.css",
@@ -63,6 +63,10 @@
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\assets\\fonts\\boxicons.woff2"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\apple-store.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apple-store.png"
     },
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\apps\\01.png",
@@ -197,8 +201,132 @@
       "PackagePath": "staticwebassets\\assets\\images\\auth\\reset-password1.png"
     },
     {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\01.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\02.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\03.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\04.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\05.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\06.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\06.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\07.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\07.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\08.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\08.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\09.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\09.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\10.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\11.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\avatars\\12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\avatars\\12.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\banners\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\banners\\01.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\banners\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\banners\\02.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\banners\\screen-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\banners\\screen-1.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\banners\\widget-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\banners\\widget-1.png"
+    },
+    {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\bg-themes\\body-background-1.webp",
       "PackagePath": "staticwebassets\\assets\\images\\bg-themes\\body-background-1.webp"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\01.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\02.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\02.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\03.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\03.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\04.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\04.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\05.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\05.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\06.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\06.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\07.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\07.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\08.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\08.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\09.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\09.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\10.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\11.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\12.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\13.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\13.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\14.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\14.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\clients\\15.png",
+      "PackagePath": "staticwebassets\\assets\\images\\clients\\15.png"
     },
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\county\\01.png",
@@ -237,8 +365,16 @@
       "PackagePath": "staticwebassets\\assets\\images\\favicon-32x32.png"
     },
     {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\gallery\\19.png",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\19.png"
+    },
+    {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\gallery\\welcome-back-3.png",
       "PackagePath": "staticwebassets\\assets\\images\\gallery\\welcome-back-3.png"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\google-play-store.png",
+      "PackagePath": "staticwebassets\\assets\\images\\google-play-store.png"
     },
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\images\\logo-icon.png",
@@ -379,6 +515,18 @@
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\Drag-And-Drop\\dist\\imageuploadify.min.js",
       "PackagePath": "staticwebassets\\assets\\plugins\\Drag-And-Drop\\dist\\imageuploadify.min.js"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\OwlCarousel\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\OwlCarousel\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\OwlCarousel\\js\\owl.carousel2.thumbs.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\OwlCarousel\\js\\owl.carousel2.thumbs.min.js"
     },
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\apexchart\\apex-custom-chart.js",
@@ -531,6 +679,26 @@
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\input-tags\\js\\tagsinput.js",
       "PackagePath": "staticwebassets\\assets\\plugins\\input-tags\\js\\tagsinput.js"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\lightbox\\dist\\css\\glightbox.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\lightbox\\dist\\css\\glightbox.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\lightbox\\dist\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\lightbox\\dist\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\lightbox\\dist\\js\\glightbox.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\lightbox\\dist\\js\\glightbox.js"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\lightbox\\dist\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\lightbox\\dist\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\lightbox\\dist\\js\\site.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\lightbox\\dist\\js\\site.js"
     },
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\assets\\plugins\\metismenu\\metisMenu.min.css",
@@ -1023,6 +1191,90 @@
     {
       "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\blue-theme.css",
+      "PackagePath": "staticwebassets\\sass\\blue-theme.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\blue-theme.css.map",
+      "PackagePath": "staticwebassets\\sass\\blue-theme.css.map"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\blue-theme.scss",
+      "PackagePath": "staticwebassets\\sass\\blue-theme.scss"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\bordered-theme.css",
+      "PackagePath": "staticwebassets\\sass\\bordered-theme.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\bordered-theme.css.map",
+      "PackagePath": "staticwebassets\\sass\\bordered-theme.css.map"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\bordered-theme.scss",
+      "PackagePath": "staticwebassets\\sass\\bordered-theme.scss"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\dark-theme.css",
+      "PackagePath": "staticwebassets\\sass\\dark-theme.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\dark-theme.css.map",
+      "PackagePath": "staticwebassets\\sass\\dark-theme.css.map"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\dark-theme.scss",
+      "PackagePath": "staticwebassets\\sass\\dark-theme.scss"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\main.css",
+      "PackagePath": "staticwebassets\\sass\\main.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\main.css.map",
+      "PackagePath": "staticwebassets\\sass\\main.css.map"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\main.scss",
+      "PackagePath": "staticwebassets\\sass\\main.scss"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\responsive.css",
+      "PackagePath": "staticwebassets\\sass\\responsive.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\responsive.css.map",
+      "PackagePath": "staticwebassets\\sass\\responsive.css.map"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\responsive.scss",
+      "PackagePath": "staticwebassets\\sass\\responsive.scss"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\semi-dark.css",
+      "PackagePath": "staticwebassets\\sass\\semi-dark.css"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\semi-dark.css.map",
+      "PackagePath": "staticwebassets\\sass\\semi-dark.css.map"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\sass\\semi-dark.scss",
+      "PackagePath": "staticwebassets\\sass\\semi-dark.scss"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\uploads\\453599865_1812957715780711_1047345180514395923_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\453599865_1812957715780711_1047345180514395923_n.jpg"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\uploads\\c295b62a-5007-4f9c-a1b7-83d96b18783a_453599865_1812957715780711_1047345180514395923_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c295b62a-5007-4f9c-a1b7-83d96b18783a_453599865_1812957715780711_1047345180514395923_n.jpg"
+    },
+    {
+      "Id": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\wwwroot\\uploads\\f5f88460-098e-4cba-8385-1d8e5defc0f0_453599865_1812957715780711_1047345180514395923_n.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f5f88460-098e-4cba-8385-1d8e5defc0f0_453599865_1812957715780711_1047345180514395923_n.jpg"
     },
     {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.DATAspNetCoreMVCMaxton.Microsoft.AspNetCore.StaticWebAssets.props",
