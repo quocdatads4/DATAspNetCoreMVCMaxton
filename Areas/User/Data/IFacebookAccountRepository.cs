@@ -21,5 +21,6 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
         {
             return await _context.AspNetFacebookAccount.ToListAsync();
         }
+      
     }
 }

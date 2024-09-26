@@ -40,6 +40,10 @@ builder.Services.AddScoped<IGoogleAccountService, GoogleAccountService>();
 builder.Services.AddScoped<IHotmailOutlookRepository, HotmailOutlookRepository>();
 builder.Services.AddScoped<IHotmailOutlookService, HotmailOutlookService>();
 
+// Register repositories và services
+builder.Services.AddScoped<IFacebookAccountViewRepository, FacebookAccountViewRepository>();
+builder.Services.AddScoped<IFacebookAccountViewService, FacebookAccountViewService>();
+
 
 var app = builder.Build();
 

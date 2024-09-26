@@ -16,6 +16,7 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
 
         public DbSet<GoogleAccountDTO> AspNetGoogleAccount { get; set; }
         public DbSet<HotmailOutlookDTO> AspNetHotmailOutlook { get; set; }
+        public DbSet<FacebookAccountViewDTO> AspNetFacebookAccountView { get; set; }
 
         public DbSet<SocialSelectDTO> AspNetSocial { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -30,6 +31,7 @@ namespace DATAspNetCoreMVCMaxton.Areas.User.Data
             modelBuilder.Entity<ProfileGroupDTO>().Property(p => p.Id).ValueGeneratedOnAdd();
             modelBuilder.Entity<ProfileOrbitaDTO>().Property(p => p.Id).ValueGeneratedOnAdd();
             modelBuilder.Entity<FacebookAccountDTO>().Property(p => p.Id).ValueGeneratedOnAdd();
+            modelBuilder.Entity<FacebookAccountViewDTO>().Property(p => p.Id).ValueGeneratedOnAdd();
             modelBuilder.Entity<GoogleAccountDTO>().Property(p => p.Id).ValueGeneratedOnAdd();
             modelBuilder.Entity<SocialSelectDTO>().Property(p => p.Id).ValueGeneratedOnAdd();
             base.OnModelCreating(modelBuilder);

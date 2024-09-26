@@ -3,16 +3,68 @@
   "WorkspaceRootPath": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\controllers\\facebookaccountviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\controllers\\facebookaccountviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\controllers\\facebookaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\controllers\\facebookaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\businesslogic\\ifacebookaccountviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\businesslogic\\ifacebookaccountviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\businesslogic\\ifacebookaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\businesslogic\\ifacebookaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\data\\ifacebookaccountviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\data\\ifacebookaccountviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\data\\ifacebookaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\data\\ifacebookaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\data\\iuseraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\data\\iuseraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\businesslogic\\iprofileorbitasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\businesslogic\\iprofileorbitasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\models\\facebookaccountviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\models\\facebookaccountviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\models\\errorviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\models\\errorviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\controllers\\useraccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\controllers\\useraccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\businesslogic\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\businesslogic\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\views\\facebookaccount\\_tablefacebookaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\views\\facebookaccount\\_tablefacebookaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\controllers\\facebookaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\controllers\\facebookaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\views\\shared\\topbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,16 +99,8 @@
       "AbsoluteMoniker": "D:0:0:{3F9D77E8-12CC-4783-9287-A682C26E8C02}|..\\DATWebViewMVC\\DATWebViewMVC.csproj|e:\\datsoftware\\datwebviewmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\controllers\\useraccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\controllers\\useraccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\views\\profilegroup\\editprofilegroup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -73,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\controllers\\profilegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\controllers\\profilegroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\businesslogic\\iprofileorbitasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\businesslogic\\iprofileorbitasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\models\\profileorbitadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\views\\hotmailoutlook\\_tablehotmailoutlook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\views\\hotmailoutlook\\_tablehotmailoutlook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\businesslogic\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\businesslogic\\iuseraccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\data\\igoogleaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,10 +163,6 @@
       "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\data\\ihotmailoutlookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\models\\hotmailoutlookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\models\\hotmailoutlookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -141,10 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\models\\googleaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\models\\googleaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|e:\\datsoftware\\dataspnetcoremvcmaxton\\areas\\user\\models\\facebookaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46ACC9BF-8A50-4A1E-A245-EEB52EA30CFC}|DATAspNetCoreMVCMaxton.csproj|solutionrelative:areas\\user\\models\\facebookaccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -154,17 +182,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\User\\Views\\Home\\Index.cshtml",
               "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Areas\\User\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAD4CAAAAAAAAAAAAwF8CAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4CAAAAAAAAAAAAwFoCAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T03:33:34.54Z",
               "IsPinned": true,
@@ -172,46 +200,175 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_TableFacebookAccount.cshtml",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\FacebookAccount\\_TableFacebookAccount.cshtml",
-              "RelativeDocumentMoniker": "Areas\\User\\Views\\FacebookAccount\\_TableFacebookAccount.cshtml",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\FacebookAccount\\_TableFacebookAccount.cshtml",
-              "RelativeToolTip": "Areas\\User\\Views\\FacebookAccount\\_TableFacebookAccount.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAE8AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T03:36:46.727Z",
+              "DocumentIndex": 0,
+              "Title": "FacebookAccountViewController.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\FacebookAccountViewController.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\Controllers\\FacebookAccountViewController.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\FacebookAccountViewController.cs",
+              "RelativeToolTip": "Areas\\User\\Controllers\\FacebookAccountViewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T07:13:30.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IFacebookAccountService.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IFacebookAccountService.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\BusinessLogic\\IFacebookAccountService.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IFacebookAccountService.cs",
+              "RelativeToolTip": "Areas\\User\\BusinessLogic\\IFacebookAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T07:08:54.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IFacebookAccountViewService.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IFacebookAccountViewService.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\BusinessLogic\\IFacebookAccountViewService.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IFacebookAccountViewService.cs",
+              "RelativeToolTip": "Areas\\User\\BusinessLogic\\IFacebookAccountViewService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T07:02:30.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DashboardReport.cshtml",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Home\\DashboardReport.cshtml",
-              "RelativeDocumentMoniker": "Areas\\User\\Views\\Home\\DashboardReport.cshtml",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Home\\DashboardReport.cshtml",
-              "RelativeToolTip": "Areas\\User\\Views\\Home\\DashboardReport.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T03:15:56.004Z",
+              "Title": "IFacebookAccountViewRepository.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IFacebookAccountViewRepository.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\Data\\IFacebookAccountViewRepository.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IFacebookAccountViewRepository.cs",
+              "RelativeToolTip": "Areas\\User\\Data\\IFacebookAccountViewRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T07:00:29.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFacebookAccountRepository.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IFacebookAccountRepository.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\Data\\IFacebookAccountRepository.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IFacebookAccountRepository.cs",
+              "RelativeToolTip": "Areas\\User\\Data\\IFacebookAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T06:47:41.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacebookAccountController.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\FacebookAccountController.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\Controllers\\FacebookAccountController.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\FacebookAccountController.cs",
+              "RelativeToolTip": "Areas\\User\\Controllers\\FacebookAccountController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T03:39:14.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "E:\\DATSoftware\\DATWebViewMVC\\frmMain.cs",
-              "RelativeDocumentMoniker": "..\\DATWebViewMVC\\frmMain.cs",
-              "ToolTip": "E:\\DATSoftware\\DATWebViewMVC\\frmMain.cs",
-              "RelativeToolTip": "..\\DATWebViewMVC\\frmMain.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAowDMAAAAMAAAAAAAAAA==",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Areas\\User\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAjwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T09:50:45.188Z",
+              "WhenOpened": "2024-09-24T04:12:20.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserAccountRepository.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IUserAccountRepository.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\Data\\IUserAccountRepository.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IUserAccountRepository.cs",
+              "RelativeToolTip": "Areas\\User\\Data\\IUserAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T06:47:36.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T04:12:15.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FacebookAccountViewDTO.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\FacebookAccountViewDTO.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\Models\\FacebookAccountViewDTO.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\FacebookAccountViewDTO.cs",
+              "RelativeToolTip": "Areas\\User\\Models\\FacebookAccountViewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T06:53:46.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IProfileOrbitasService.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IProfileOrbitasService.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\BusinessLogic\\IProfileOrbitasService.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IProfileOrbitasService.cs",
+              "RelativeToolTip": "Areas\\User\\BusinessLogic\\IProfileOrbitasService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T10:00:07.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "ErrorViewDTO.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\ErrorViewDTO.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\Models\\ErrorViewDTO.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\ErrorViewDTO.cs",
+              "RelativeToolTip": "Areas\\User\\Models\\ErrorViewDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T06:53:59.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-25T09:39:46.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATWebViewMVC\\Program.cs",
               "RelativeDocumentMoniker": "..\\DATWebViewMVC\\Program.cs",
@@ -224,56 +381,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-25T09:39:46.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FacebookAccountController.cs",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\FacebookAccountController.cs",
-              "RelativeDocumentMoniker": "Areas\\User\\Controllers\\FacebookAccountController.cs",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\FacebookAccountController.cs",
-              "RelativeToolTip": "Areas\\User\\Controllers\\FacebookAccountController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwBwAAAAUAAAAAAAAAA==",
+              "Title": "IUserAccountService.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IUserAccountService.cs",
+              "RelativeDocumentMoniker": "Areas\\User\\BusinessLogic\\IUserAccountService.cs",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IUserAccountService.cs",
+              "RelativeToolTip": "Areas\\User\\BusinessLogic\\IUserAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T03:39:14.479Z",
+              "WhenOpened": "2024-09-24T08:33:58.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Topbar.cshtml",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Shared\\Topbar.cshtml",
-              "RelativeDocumentMoniker": "Areas\\User\\Views\\Shared\\Topbar.cshtml",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Shared\\Topbar.cshtml",
-              "RelativeToolTip": "Areas\\User\\Views\\Shared\\Topbar.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T04:09:09.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EditProfileGroup.cshtml",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\ProfileGroup\\EditProfileGroup.cshtml",
-              "RelativeDocumentMoniker": "Areas\\User\\Views\\ProfileGroup\\EditProfileGroup.cshtml",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\ProfileGroup\\EditProfileGroup.cshtml",
-              "RelativeToolTip": "Areas\\User\\Views\\ProfileGroup\\EditProfileGroup.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T08:43:43.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "UserAccountController.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\UserAccountController.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Controllers\\UserAccountController.cs",
@@ -286,7 +406,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "E:\\DATSoftware\\DATWebViewMVC\\frmMain.cs",
+              "RelativeDocumentMoniker": "..\\DATWebViewMVC\\frmMain.cs",
+              "ToolTip": "E:\\DATSoftware\\DATWebViewMVC\\frmMain.cs",
+              "RelativeToolTip": "..\\DATWebViewMVC\\frmMain.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowDMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T09:50:45.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DashboardReport.cshtml",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Home\\DashboardReport.cshtml",
+              "RelativeDocumentMoniker": "Areas\\User\\Views\\Home\\DashboardReport.cshtml",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Home\\DashboardReport.cshtml",
+              "RelativeToolTip": "Areas\\User\\Views\\Home\\DashboardReport.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T03:15:56.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_TableFacebookAccount.cshtml",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\FacebookAccount\\_TableFacebookAccount.cshtml",
+              "RelativeDocumentMoniker": "Areas\\User\\Views\\FacebookAccount\\_TableFacebookAccount.cshtml",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\FacebookAccount\\_TableFacebookAccount.cshtml",
+              "RelativeToolTip": "Areas\\User\\Views\\FacebookAccount\\_TableFacebookAccount.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAE8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T03:36:46.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Topbar.cshtml",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Shared\\Topbar.cshtml",
+              "RelativeDocumentMoniker": "Areas\\User\\Views\\Shared\\Topbar.cshtml",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Shared\\Topbar.cshtml",
+              "RelativeToolTip": "Areas\\User\\Views\\Shared\\Topbar.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T04:09:09.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EditProfileGroup.cshtml",
+              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\ProfileGroup\\EditProfileGroup.cshtml",
+              "RelativeDocumentMoniker": "Areas\\User\\Views\\ProfileGroup\\EditProfileGroup.cshtml",
+              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\ProfileGroup\\EditProfileGroup.cshtml",
+              "RelativeToolTip": "Areas\\User\\Views\\ProfileGroup\\EditProfileGroup.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T08:43:43.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "HomeController.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Controllers\\HomeController.cs",
@@ -294,12 +475,11 @@
               "RelativeToolTip": "Areas\\User\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:25:01.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T04:25:01.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\Test\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\User\\Views\\Test\\Index.cshtml",
@@ -307,12 +487,11 @@
               "RelativeToolTip": "Areas\\User\\Views\\Test\\Index.cshtml",
               "ViewState": "AgIAANIBAAAAAAAAAAAAwPoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T01:45:48.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T01:45:48.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 20,
               "Title": "TestController.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\TestController.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Controllers\\TestController.cs",
@@ -320,12 +499,11 @@
               "RelativeToolTip": "Areas\\User\\Controllers\\TestController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwBMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T06:02:12.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T06:02:12.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "frmMain.Designer.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATWebViewMVC\\frmMain.Designer.cs",
               "RelativeDocumentMoniker": "..\\DATWebViewMVC\\frmMain.Designer.cs",
@@ -333,24 +511,22 @@
               "RelativeToolTip": "..\\DATWebViewMVC\\frmMain.Designer.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T01:35:02.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T01:35:02.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "E:\\DATSoftware\\DATWebViewMVC\\frmMain.cs",
               "RelativeDocumentMoniker": "..\\DATWebViewMVC\\frmMain.cs",
               "ToolTip": "E:\\DATSoftware\\DATWebViewMVC\\frmMain.cs [Design]",
               "RelativeToolTip": "..\\DATWebViewMVC\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T01:42:06.188Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-09-26T01:42:06.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "ProfileOrbitaController.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\ProfileOrbitaController.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Controllers\\ProfileOrbitaController.cs",
@@ -362,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "IProfileOrbitasRepository.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IProfileOrbitasRepository.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Data\\IProfileOrbitasRepository.cs",
@@ -370,24 +546,11 @@
               "RelativeToolTip": "Areas\\User\\Data\\IProfileOrbitasRepository.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAAwAwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T07:41:21.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T07:41:21.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:12:15.765Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "EditProfileOrbita.cshtml",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\ProfileOrbita\\EditProfileOrbita.cshtml",
               "RelativeDocumentMoniker": "Areas\\User\\Views\\ProfileOrbita\\EditProfileOrbita.cshtml",
@@ -395,12 +558,11 @@
               "RelativeToolTip": "Areas\\User\\Views\\ProfileOrbita\\EditProfileOrbita.cshtml",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAABgAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-25T08:43:46.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T08:43:46.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 30,
               "Title": "ProfileOrbitaDTO.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\ProfileOrbitaDTO.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Models\\ProfileOrbitaDTO.cs",
@@ -412,20 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IProfileOrbitasService.cs",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IProfileOrbitasService.cs",
-              "RelativeDocumentMoniker": "Areas\\User\\BusinessLogic\\IProfileOrbitasService.cs",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IProfileOrbitasService.cs",
-              "RelativeToolTip": "Areas\\User\\BusinessLogic\\IProfileOrbitasService.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAswA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T10:00:07.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "ProfileGroupController.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\ProfileGroupController.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Controllers\\ProfileGroupController.cs",
@@ -437,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "_UserMainDTO.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\_UserMainDTO.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Models\\_UserMainDTO.cs",
@@ -449,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "IProfileGroupRepository.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IProfileGroupRepository.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Data\\IProfileGroupRepository.cs",
@@ -457,12 +606,11 @@
               "RelativeToolTip": "Areas\\User\\Data\\IProfileGroupRepository.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T07:45:48.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T07:45:48.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "_TableHotmailOutlook.cshtml",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\HotmailOutlook\\_TableHotmailOutlook.cshtml",
               "RelativeDocumentMoniker": "Areas\\User\\Views\\HotmailOutlook\\_TableHotmailOutlook.cshtml",
@@ -470,24 +618,11 @@
               "RelativeToolTip": "Areas\\User\\Views\\HotmailOutlook\\_TableHotmailOutlook.cshtml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAADIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T05:02:56.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T05:02:56.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IUserAccountService.cs",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IUserAccountService.cs",
-              "RelativeDocumentMoniker": "Areas\\User\\BusinessLogic\\IUserAccountService.cs",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IUserAccountService.cs",
-              "RelativeToolTip": "Areas\\User\\BusinessLogic\\IUserAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T08:33:58.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 37,
               "Title": "GoogleAccountController.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\GoogleAccountController.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Controllers\\GoogleAccountController.cs",
@@ -499,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "IGoogleAccountRepository.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IGoogleAccountRepository.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Data\\IGoogleAccountRepository.cs",
@@ -511,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 36,
               "Title": "ProfileGroupList.cshtml",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Views\\ProfileGroup\\ProfileGroupList.cshtml",
               "RelativeDocumentMoniker": "Areas\\User\\Views\\ProfileGroup\\ProfileGroupList.cshtml",
@@ -523,7 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 38,
               "Title": "IGoogleAccountService.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IGoogleAccountService.cs",
               "RelativeDocumentMoniker": "Areas\\User\\BusinessLogic\\IGoogleAccountService.cs",
@@ -535,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 40,
               "Title": "IHotmailOutlookRepository.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\IHotmailOutlookRepository.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Data\\IHotmailOutlookRepository.cs",
@@ -547,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 39,
               "Title": "HotmailOutlookController.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Controllers\\HotmailOutlookController.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Controllers\\HotmailOutlookController.cs",
@@ -559,7 +694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "IHotmailOutlookService.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\BusinessLogic\\IHotmailOutlookService.cs",
               "RelativeDocumentMoniker": "Areas\\User\\BusinessLogic\\IHotmailOutlookService.cs",
@@ -571,7 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 41,
               "Title": "HotmailOutlookDTO.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\HotmailOutlookDTO.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Models\\HotmailOutlookDTO.cs",
@@ -583,19 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Areas\\User\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Areas\\User\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:12:20.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "GoogleAccountDTO.cs",
               "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\GoogleAccountDTO.cs",
               "RelativeDocumentMoniker": "Areas\\User\\Models\\GoogleAccountDTO.cs",
@@ -604,18 +727,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T04:05:14.466Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "FacebookAccountDTO.cs",
-              "DocumentMoniker": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\FacebookAccountDTO.cs",
-              "RelativeDocumentMoniker": "Areas\\User\\Models\\FacebookAccountDTO.cs",
-              "ToolTip": "E:\\DATSoftware\\DATAspNetCoreMVCMaxton\\Areas\\User\\Models\\FacebookAccountDTO.cs",
-              "RelativeToolTip": "Areas\\User\\Models\\FacebookAccountDTO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T04:02:46.346Z"
             }
           ]
         }
